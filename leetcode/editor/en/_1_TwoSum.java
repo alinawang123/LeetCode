@@ -1,3 +1,5 @@
+package editor.en;
+
 //Given an array of integers nums and an integer target, return indices of the t
 //wo numbers such that they add up to target. 
 //
@@ -41,10 +43,12 @@
 // Related Topics Array Hash Table 
 // 👍 20536 👎 722
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
+
+import static org.junit.Assert.assertEquals;
+
 
 public class _1_TwoSum {
   private static final Logger logger = Logger.getLogger(_1_TwoSum.class.toString());
@@ -52,7 +56,7 @@ public class _1_TwoSum {
   public static void main(String[] args) {
     long startTimeMillis = System.currentTimeMillis();
     Solution solution = new _1_TwoSum().new Solution();
-    logger.info("Solution:" + Arrays.equals(solution.twoSum(new int[]{3, 2, 4}, 6), new int[]{1, 2}));
+    assertEquals();
     logger.warning(String.valueOf(solution));
     logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
   }

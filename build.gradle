@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets.main.java.srcDirs = ['leetcode']
+
+
+dependencies {
+//    implementation group: 'org.slf4j', name:'slf4j-api', version: 'latest.release'
+//    implementation group: 'ch.qos.logback', name:'logback-classic', version: 'latest.release'
+//    implementation group: 'ch.qos.logback', name:'logback-core', version: 'latest.release'
+    implementation 'junit:junit:latest.release'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}
