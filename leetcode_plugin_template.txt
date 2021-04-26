@@ -1,18 +1,28 @@
 File name:
 _$!{question.frontendQuestionId}_$!velocityTool.camelCaseName(${question.titleSlug})
 
-Template:
+-----------------Template start:-----------------------
 package editor.en;
+
 ${question.content}
-import java.util.logging.Logger;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import static org.junit.Assert.assertEquals;
+
 public class _$!{question.frontendQuestionId}_$!velocityTool.camelCaseName(${question.titleSlug}){
-    private static final Logger logger = Logger.getLogger(_$!{question.frontendQuestionId}_$!velocityTool.camelCaseName(${question.titleSlug}) .class.toString());
+
+    private static final Logger logger = LoggerFactory.getLogger(_$!{question.frontendQuestionId}_$!velocityTool.camelCaseName(${question.titleSlug}) .class);
+
     public static void main(String[] args) {
         long startTimeMillis = System.currentTimeMillis();
         Solution solution = new _$!{question.frontendQuestionId}_$!velocityTool.camelCaseName(${question.titleSlug})().new Solution();
+
         assertEquals();
-        logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
+
+        logger.info("time cost: [{}] ms", System.currentTimeMillis() - startTimeMillis);
     }
     ${question.code}
 }
+-----------------Template end-----------------------
