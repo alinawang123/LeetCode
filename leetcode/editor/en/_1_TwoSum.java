@@ -43,11 +43,11 @@ package editor.en;
 // Related Topics Array Hash Table 
 // 👍 20536 👎 722
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
 
-import static org.junit.Assert.assertEquals;
 
 
 public class _1_TwoSum {
@@ -56,7 +56,8 @@ public class _1_TwoSum {
   public static void main(String[] args) {
     long startTimeMillis = System.currentTimeMillis();
     Solution solution = new _1_TwoSum().new Solution();
-    assertEquals();
+    logger.info("Solution:" + Arrays.equals(solution.twoSum(new int[]{2,7,11,15},9),new int[]{0,
+        1}));
     logger.warning(String.valueOf(solution));
     logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
   }
