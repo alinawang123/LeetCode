@@ -89,9 +89,8 @@ public class _108_ConvertSortedArrayToBinarySearchTree {
         node.right = helper(num, mid + 1, high);
         return node;
       }
-
-      }
     }
+  }
 //leetcode submit region end(Prohibit modification and deletion)
 
-  }
+}
