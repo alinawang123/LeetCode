@@ -1,35 +1,25 @@
-//You are given an array of k linked-lists lists, each linked-list is sorted in 
-//ascending order. 
-//
-// Merge all the linked-lists into one sorted linked-list and return it. 
+//Given the head of a linked list and an integer val, remove all the nodes of th
+//e linked list that has Node.val == val, and return the new head. 
 //
 // 
 // Example 1: 
 //
 // 
-//Input: lists = [[1,4,5],[1,3,4],[2,6]]
-//Output: [1,1,2,3,4,4,5,6]
-//Explanation: The linked-lists are:
-//[
-//  1->4->5,
-//  1->3->4,
-//  2->6
-//]
-//merging them into one sorted list:
-//1->1->2->3->4->4->5->6
+//Input: head = [1,2,6,3,4,5,6], val = 6
+//Output: [1,2,3,4,5]
 // 
 //
 // Example 2: 
 //
 // 
-//Input: lists = []
+//Input: head = [], val = 1
 //Output: []
 // 
 //
 // Example 3: 
 //
 // 
-//Input: lists = [[]]
+//Input: head = [7,7,7,7], val = 7
 //Output: []
 // 
 //
@@ -37,23 +27,19 @@
 // Constraints: 
 //
 // 
-// k == lists.length 
-// 0 <= k <= 10^4 
-// 0 <= lists[i].length <= 500 
-// -10^4 <= lists[i][j] <= 10^4 
-// lists[i] is sorted in ascending order. 
-// The sum of lists[i].length won't exceed 10^4. 
+// The number of nodes in the list is in the range [0, 104]. 
+// 1 <= Node.val <= 50 
+// 0 <= val <= 50 
 // 
-// Related Topics Linked List Divide and Conquer Heap (Priority Queue) Merge Sor
-//t 
-// 👍 8644 👎 382
+// Related Topics Linked List Recursion 
+// 👍 3366 👎 135
 
 import java.util.logging.Logger;
-public class _23_MergeKSortedLists{
-    private static final Logger logger = Logger.getLogger(_23_MergeKSortedLists .class.toString());
+public class _203_RemoveLinkedListElements{
+    private static final Logger logger = Logger.getLogger(_203_RemoveLinkedListElements .class.toString());
     public static void main(String[] args) {
         long startTimeMillis = System.currentTimeMillis();
-        Solution solution = new _23_MergeKSortedLists().new Solution();
+        Solution solution = new _203_RemoveLinkedListElements().new Solution();
         // assert solution == ;
         logger.warning(String.valueOf(solution));
         logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
@@ -77,7 +63,7 @@ class Solution {
       ListNode(int val) { this.val = val; }
       ListNode(int val, ListNode next) { this.val = val; this.next = next; }
   }
-    public ListNode mergeKLists(ListNode[] lists) {
+    public ListNode removeElements(ListNode head, int val) {
         return null;
     }
 }
