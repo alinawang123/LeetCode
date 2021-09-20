@@ -38,38 +38,56 @@
 // 👍 8540 👎 152
 
 import java.util.logging.Logger;
-public class _206_ReverseLinkedList{
-    private static final Logger logger = Logger.getLogger(_206_ReverseLinkedList .class.toString());
-    public static void main(String[] args) {
-        long startTimeMillis = System.currentTimeMillis();
-        Solution solution = new _206_ReverseLinkedList().new Solution();
-        // assert solution == ;
-        logger.warning(String.valueOf(solution));
-        logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
-    }
-    //leetcode submit region begin(Prohibit modification and deletion)
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
-class Solution {
-      public class ListNode {
+
+public class _206_ReverseLinkedList {
+  private static final Logger logger = Logger.getLogger(_206_ReverseLinkedList.class.toString());
+
+  public static void main(String[] args) {
+    long startTimeMillis = System.currentTimeMillis();
+    Solution solution = new _206_ReverseLinkedList().new Solution();
+    // assert solution == ;
+    logger.warning(String.valueOf(solution));
+    logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
+  }
+  //leetcode submit region begin(Prohibit modification and deletion)
+
+  /**
+   * Definition for singly-linked list. public class ListNode { int val; ListNode next; ListNode()
+   * {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val;
+   * this.next = next; } }
+   */
+  class Solution {
+    public class ListNode {
       int val;
       ListNode next;
-      ListNode() {}
-      ListNode(int val) { this.val = val; }
-      ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-  }
-    public ListNode reverseList(ListNode head) {
-        return null;
+
+      ListNode() {
+      }
+
+      ListNode(int val) {
+        this.val = val;
+      }
+
+      ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+      }
     }
-}
+
+    public ListNode reverseList(ListNode head) {
+      if (head == null) return head;
+      ListNode next = head.next;
+      head.next = null;
+
+      while (next != null) {
+        ListNode temp = next.next;
+        next.next = head;
+        head = next;
+        next = temp;
+      }
+      return head;
+    }
+  }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
