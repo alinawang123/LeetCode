@@ -80,7 +80,7 @@ public class _19_RemoveNthNodeFromEndOfList {
       dummyHead.next =head;
       ListNode slow = dummyHead;
       ListNode fast = dummyHead;
-      while (fast.next != null && n > 0) {
+      while (fast != null && n >=0) {
         fast = fast.next;
         n--;
       }

@@ -51,40 +51,52 @@
 // 👍 5086 👎 352
 
 import java.util.logging.Logger;
-public class _142_LinkedListCycleIi{
-    private static final Logger logger = Logger.getLogger(_142_LinkedListCycleIi .class.toString());
-    public static void main(String[] args) {
-        long startTimeMillis = System.currentTimeMillis();
-        Solution solution = new _142_LinkedListCycleIi().new Solution();
-        // assert solution == ;
-        logger.warning(String.valueOf(solution));
-        logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
-    }
-    //leetcode submit region begin(Prohibit modification and deletion)
-/**
- * Definition for singly-linked list.
- * class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) {
- *         val = x;
- *         next = null;
- *     }
- * }
- */
-public class Solution {
-      class ListNode {
+
+public class _142_LinkedListCycleIi {
+  private static final Logger logger = Logger.getLogger(_142_LinkedListCycleIi.class.toString());
+
+  public static void main(String[] args) {
+    long startTimeMillis = System.currentTimeMillis();
+    Solution solution = new _142_LinkedListCycleIi().new Solution();
+    // assert solution == ;
+    logger.warning(String.valueOf(solution));
+    logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
+  }
+  //leetcode submit region begin(Prohibit modification and deletion)
+
+  /**
+   * Definition for singly-linked list. class ListNode { int val; ListNode next; ListNode(int x) {
+   * val = x; next = null; } }
+   */
+  public class Solution {
+    class ListNode {
       int val;
       ListNode next;
+
       ListNode(int x) {
-          val = x;
-          next = null;
+        val = x;
+        next = null;
       }
-  }
-    public ListNode detectCycle(ListNode head) {
-        return null;
     }
-}
+
+    public ListNode detectCycle(ListNode head) {
+      ListNode slow = head;
+      ListNode fast = head;
+      while (fast != null && fast.next != null) {
+        slow = slow.next;
+        fast = fast.next.next;
+        if (slow == fast) {
+          fast = head;
+          while (slow != fast) {
+            slow = slow.next;
+            fast = fast.next;
+          }
+          return slow;
+        }
+      }
+      return null;
+    }
+  }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }

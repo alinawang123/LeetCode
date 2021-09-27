@@ -46,7 +46,7 @@
 // 
 // Related Topics Linked List Divide and Conquer Heap (Priority Queue) Merge Sor
 //t 
-// 👍 8644 👎 382
+// 👍 8722 👎 389
 
 import java.util.logging.Logger;
 public class _23_MergeKSortedLists{
@@ -70,15 +70,8 @@ public class _23_MergeKSortedLists{
  * }
  */
 class Solution {
-      public class ListNode {
-      int val;
-      ListNode next;
-      ListNode() {}
-      ListNode(int val) { this.val = val; }
-      ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-  }
     public ListNode mergeKLists(ListNode[] lists) {
-        return null;
+        
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
