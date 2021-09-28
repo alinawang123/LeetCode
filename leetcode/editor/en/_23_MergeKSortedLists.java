@@ -49,31 +49,47 @@
 // 👍 8722 👎 389
 
 import java.util.logging.Logger;
-public class _23_MergeKSortedLists{
-    private static final Logger logger = Logger.getLogger(_23_MergeKSortedLists .class.toString());
-    public static void main(String[] args) {
-        long startTimeMillis = System.currentTimeMillis();
-        Solution solution = new _23_MergeKSortedLists().new Solution();
-        // assert solution == ;
-        logger.warning(String.valueOf(solution));
-        logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
+
+public class _23_MergeKSortedLists {
+  private static final Logger logger = Logger.getLogger(_23_MergeKSortedLists.class.toString());
+
+  public static void main(String[] args) {
+    long startTimeMillis = System.currentTimeMillis();
+    Solution solution = new _23_MergeKSortedLists().new Solution();
+    // assert solution == ;
+    logger.warning(String.valueOf(solution));
+    logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
+  }
+  //leetcode submit region begin(Prohibit modification and deletion)
+
+  /**
+   * Definition for singly-linked list. public class ListNode { int val; ListNode next; ListNode()
+   * {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val;
+   * this.next = next; } }
+   */
+  class Solution {
+    public class ListNode {
+      int val;
+      ListNode next;
+
+      ListNode() {
+      }
+
+      ListNode(int val) {
+        this.val = val;
+      }
+
+      ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+      }
     }
-    //leetcode submit region begin(Prohibit modification and deletion)
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
-class Solution {
+
     public ListNode mergeKLists(ListNode[] lists) {
-        
+      
+
     }
-}
+  }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
