@@ -53,31 +53,76 @@
 // 👍 5029 👎 444
 
 import java.util.logging.Logger;
-public class _25_ReverseNodesInKGroup{
-    private static final Logger logger = Logger.getLogger(_25_ReverseNodesInKGroup .class.toString());
-    public static void main(String[] args) {
-        long startTimeMillis = System.currentTimeMillis();
-        Solution solution = new _25_ReverseNodesInKGroup().new Solution();
-        // assert solution == ;
-        logger.warning(String.valueOf(solution));
-        logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
+
+public class _25_ReverseNodesInKGroup {
+  private static final Logger logger = Logger.getLogger(_25_ReverseNodesInKGroup.class.toString());
+
+  public static void main(String[] args) {
+    long startTimeMillis = System.currentTimeMillis();
+    Solution solution = new _25_ReverseNodesInKGroup().new Solution();
+    // assert solution == ;
+    logger.warning(String.valueOf(solution));
+    logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
+  }
+  //leetcode submit region begin(Prohibit modification and deletion)
+
+  /**
+   * Definition for singly-linked list. public class ListNode { int val; ListNode next; ListNode()
+   * {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val;
+   * this.next = next; } }
+   */
+  class Solution {
+    public class ListNode {
+      int val;
+      ListNode next;
+
+      ListNode() {
+      }
+
+      ListNode(int val) {
+        this.val = val;
+      }
+
+      ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+      }
     }
-    //leetcode submit region begin(Prohibit modification and deletion)
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
-class Solution {
+
     public ListNode reverseKGroup(ListNode head, int k) {
-        
+      if (k == 1) return head;
+      ListNode curr = head;
+      int count = 0;
+      while (curr != null) { // find the size of the list
+        curr = curr.next;
+        count++;
+      }
+      int n = count / k;
+      for (int i = 0; i < n; i++) {
+        head = reverseBetween(head, i * k + 1, i * k + k);
+      }
+      return head;
     }
-}
+
+    public ListNode reverseBetween(ListNode head, int left, int right) {
+      if (head == null || left == right) return head;
+      ListNode dummy = new ListNode(0);
+      ListNode pre = dummy;
+      dummy.next = head;
+      for (int i = 0; i < left - 1; i++) {
+        pre = pre.next;
+      }
+      ListNode start = pre.next;
+      ListNode then = start.next;
+      for (int i = 0; i < right - left; i++) {
+        start.next = then.next;
+        then.next = pre.next;
+        pre.next = then;
+        then = start.next;
+      }
+      return dummy.next;
+    }
+  }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }

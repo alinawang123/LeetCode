@@ -86,8 +86,42 @@ public class _23_MergeKSortedLists {
     }
 
     public ListNode mergeKLists(ListNode[] lists) {
-      
+      // corner case
+      if(lists == null || lists.length == 0) return null;
 
+      ListNode head = merge(lists, 0, lists.length - 1);
+      return head;
+    }
+
+    // return new head after merging list[left : right]
+    public ListNode merge(ListNode[] lists, int left, int right){
+      // base case
+      if(left == right) return lists[left];
+
+      int mid = left + (right - left)/2;
+      ListNode l1 = merge(lists, left, mid); // merge [left : mid]
+      ListNode l2 = merge(lists, mid + 1, right); // merge [mid + 1 : right]
+
+      return mergeTwoLists(l1, l2);
+    }
+    public ListNode mergeTwoLists(ListNode l1,ListNode l2) {
+      if(l1 == null) return l2;
+      else if(l2 == null) return l1;
+      ListNode dummyHead = new ListNode(0);
+      ListNode curr = dummyHead;
+      while (l1 != null && l2 != null) {
+        if (l1.val <= l2.val) {
+          curr.next = l1;
+          l1 = l1.next;
+        } else {
+          curr.next = l2;
+          l2 = l2.next;
+        }
+        curr = curr.next;
+      }
+      if (l1 != null) curr.next = l1;
+      if (l2 != null) curr.next = l2;
+      return dummyHead.next;
     }
   }
 //leetcode submit region end(Prohibit modification and deletion)
