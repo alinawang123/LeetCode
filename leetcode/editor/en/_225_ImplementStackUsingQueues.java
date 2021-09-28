@@ -59,9 +59,9 @@ public class _225_ImplementStackUsingQueues{
     private static final Logger logger = Logger.getLogger(_225_ImplementStackUsingQueues .class.toString());
     public static void main(String[] args) {
         long startTimeMillis = System.currentTimeMillis();
-        Solution solution = new _225_ImplementStackUsingQueues().new Solution();
+        //Solution solution = new _225_ImplementStackUsingQueues().new Solution();
         // assert solution == ;
-        logger.warning(String.valueOf(solution));
+        //logger.warning(String.valueOf(solution));
         logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
     }
     //leetcode submit region begin(Prohibit modification and deletion)
