@@ -67,6 +67,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/_148_SortList.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_148_SortList.java" />
+              <option name="questionId" value="148" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/_14_LongestCommonPrefix.java">
           <value>
             <LeetcodeEditor>
@@ -75,11 +83,27 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/_150_EvaluateReversePolishNotation.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_150_EvaluateReversePolishNotation.java" />
+              <option name="questionId" value="150" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/_160_IntersectionOfTwoLinkedLists.java">
           <value>
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_160_IntersectionOfTwoLinkedLists.java" />
               <option name="questionId" value="160" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/_167_TwoSumIiInputArrayIsSorted.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_167_TwoSumIiInputArrayIsSorted.java" />
+              <option name="questionId" value="167" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -139,11 +163,43 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/_225_ImplementStackUsingQueues.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_225_ImplementStackUsingQueues.java" />
+              <option name="questionId" value="225" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/_232_ImplementQueueUsingStacks.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_232_ImplementQueueUsingStacks.java" />
+              <option name="questionId" value="232" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/_239_SlidingWindowMaximum.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_239_SlidingWindowMaximum.java" />
+              <option name="questionId" value="239" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/_23_MergeKSortedLists.java">
           <value>
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_23_MergeKSortedLists.java" />
               <option name="questionId" value="23" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/_25_ReverseNodesInKGroup.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_25_ReverseNodesInKGroup.java" />
+              <option name="questionId" value="25" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -168,6 +224,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_2_AddTwoNumbers.java" />
               <option name="questionId" value="2" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/_32_LongestValidParentheses.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_32_LongestValidParentheses.java" />
+              <option name="questionId" value="32" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -200,6 +264,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_53_MaximumSubarray.java" />
               <option name="questionId" value="53" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/_581_ShortestUnsortedContinuousSubarray.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_581_ShortestUnsortedContinuousSubarray.java" />
+              <option name="questionId" value="581" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -251,6 +323,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/_739_DailyTemperatures.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_739_DailyTemperatures.java" />
+              <option name="questionId" value="739" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/_7_ReverseInteger.java">
           <value>
             <LeetcodeEditor>
@@ -267,6 +347,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/_84_LargestRectangleInHistogram.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_84_LargestRectangleInHistogram.java" />
+              <option name="questionId" value="84" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/_88_MergeSortedArray.java">
           <value>
             <LeetcodeEditor>
@@ -280,6 +368,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_91_DecodeWays.java" />
               <option name="questionId" value="91" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/_92_ReverseLinkedListIi.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_92_ReverseLinkedListIi.java" />
+              <option name="questionId" value="92" />
             </LeetcodeEditor>
           </value>
         </entry>

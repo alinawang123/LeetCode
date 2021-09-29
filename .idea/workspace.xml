@@ -4,8 +4,9 @@
     <list default="true" id="f8719c4c-6879-41ae-bf3a-dbeada41b572" name="Default Changelist" comment="Easy problems">
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_23_MergeKSortedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_23_MergeKSortedLists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/all.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_225_ImplementStackUsingQueues.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_225_ImplementStackUsingQueues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_232_ImplementQueueUsingStacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_232_ImplementQueueUsingStacks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_32_LongestValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_32_LongestValidParentheses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +15,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1rdAcI3VCdmUR94zk29UINiaW3W" />
   <component name="ProjectViewState">
