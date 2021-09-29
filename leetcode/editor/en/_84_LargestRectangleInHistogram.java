@@ -29,6 +29,8 @@
 // Related Topics Array Stack Monotonic Stack 
 // 👍 7235 👎 118
 
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.logging.Logger;
 public class _84_LargestRectangleInHistogram{
     private static final Logger logger = Logger.getLogger(_84_LargestRectangleInHistogram .class.toString());
@@ -42,7 +44,27 @@ public class _84_LargestRectangleInHistogram{
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int largestRectangleArea(int[] heights) {
-        
+        int len = heights.length;
+        if(len==0) return 0;
+        if(len==1) return heights[0];
+        int area = 0;
+        int[] newHeights = new int[len+2];
+        for (int i = 0; i < len; i++) {
+            newHeights[i+1] = heights[i];
+        }
+        len+=2;
+        heights = newHeights;
+        Deque<Integer> stack = new ArrayDeque<>();
+        stack.addLast(0);
+        for (int i = 0; i < len; i++) {
+            while(heights[stack.peekLast()]>heights[i]){
+                int height = heights[stack.removeLast()];
+                int width = i-stack.peekLast()-1;
+                area = Math.max(area, width*height);
+            }
+            stack.addLast(i);
+        }
+        return area;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

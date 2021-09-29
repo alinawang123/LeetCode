@@ -51,22 +51,51 @@
 // Related Topics Array Math Stack 
 // 👍 2152 👎 559
 
+import java.util.Stack;
 import java.util.logging.Logger;
-public class _150_EvaluateReversePolishNotation{
-    private static final Logger logger = Logger.getLogger(_150_EvaluateReversePolishNotation .class.toString());
-    public static void main(String[] args) {
-        long startTimeMillis = System.currentTimeMillis();
-        Solution solution = new _150_EvaluateReversePolishNotation().new Solution();
-        // assert solution == ;
-        logger.warning(String.valueOf(solution));
-        logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
-    }
-    //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+
+public class _150_EvaluateReversePolishNotation {
+  private static final Logger logger = Logger.getLogger(_150_EvaluateReversePolishNotation.class.toString());
+
+  public static void main(String[] args) {
+    long startTimeMillis = System.currentTimeMillis();
+    Solution solution = new _150_EvaluateReversePolishNotation().new Solution();
+    String[] input = {"2","1","+","3","*"};
+    solution.evalRPN(input);
+    logger.warning(String.valueOf(solution));
+    logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
+  }
+
+  //leetcode submit region begin(Prohibit modification and deletion)
+  class Solution {
     public int evalRPN(String[] tokens) {
-        
+      int a, b;
+      int len = tokens.length;
+      Stack<Integer> stack = new Stack<>();
+      for (int i = 0; i < len; i++) {
+        if (tokens[i].equals("+")) {
+          a = stack.pop();
+          b = stack.pop();
+          stack.push(a + b);
+        } else if (tokens[i].equals("-")) {
+          a = stack.pop();
+          b = stack.pop();
+          stack.push(b - a);
+        } else if (tokens[i].equals("*")) {
+          a = stack.pop();
+          b = stack.pop();
+          stack.push(a * b);
+        } else if (tokens[i].equals("/")) {
+          a = stack.pop();
+          b = stack.pop();
+          stack.push(b / a);
+        } else {
+          stack.push(Integer.parseInt(tokens[i]));
+        }
+      }
+      return stack.pop();
     }
-}
+  }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
