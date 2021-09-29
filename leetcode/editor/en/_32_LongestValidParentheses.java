@@ -35,6 +35,8 @@
 // Related Topics String Dynamic Programming Stack 
 // 👍 6221 👎 214
 
+import java.util.Queue;
+import java.util.Stack;
 import java.util.logging.Logger;
 
 public class _32_LongestValidParentheses {
@@ -51,13 +53,18 @@ public class _32_LongestValidParentheses {
   //leetcode submit region begin(Prohibit modification and deletion)
   class Solution {
     public int longestValidParentheses(String s) {
-      if (s.length() == 0) return 0;
+      Stack<Integer> stack = new Stack<Integer>();
       int result = 0;
-      int[] dp = new int[s.length()];
-      for (int i = 0; i < s.length(); i++) {
-        if (s.charAt(i) == ')' && i - dp[i - 1] - 1 > 0 && s.charAt(i - dp[i - 1] - 1) == '(') {
-          dp[i] = dp[i - 1] + dp[i - dp[i - 1] - 1] + 2;
-          result = Math.max(result, dp[i]);
+      stack.push(-1);
+      for(int i=0; i<s.length(); i++) {
+        if(s.charAt(i)=='(') {
+          stack.push(i);
+        } else {
+          stack.pop();
+          if (stack.isEmpty()) stack.push(i);
+          else {
+            result = Math.max(result, i-stack.peek());
+          }
         }
       }
       return result;

@@ -54,6 +54,9 @@
 // Related Topics Stack Design Queue 
 // 👍 1419 👎 732
 
+import java.util.LinkedList;
+import java.util.PriorityQueue;
+import java.util.Queue;
 import java.util.logging.Logger;
 public class _225_ImplementStackUsingQueues{
     private static final Logger logger = Logger.getLogger(_225_ImplementStackUsingQueues .class.toString());
@@ -66,25 +69,28 @@ public class _225_ImplementStackUsingQueues{
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class MyStack {
-
+    private Queue<Integer> q;
     public MyStack() {
-        
+        this.q = new LinkedList<>();
     }
     
     public void push(int x) {
-        
+        q.add(x);
+        for(int i= 0; i<q.size()-1; i++){
+            q.add(q.poll());
+        }
     }
     
     public int pop() {
-        
+       return q.poll();
     }
     
     public int top() {
-        
+        return q.peek();
     }
     
     public boolean empty() {
-        
+        return q.isEmpty();
     }
 }
 

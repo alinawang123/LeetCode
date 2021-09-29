@@ -56,39 +56,51 @@
 // Related Topics Stack Design Queue 
 // 👍 2269 👎 181
 
+import java.util.Stack;
 import java.util.logging.Logger;
-public class _232_ImplementQueueUsingStacks{
-    private static final Logger logger = Logger.getLogger(_232_ImplementQueueUsingStacks .class.toString());
-    public static void main(String[] args) {
-        long startTimeMillis = System.currentTimeMillis();
-        Solution solution = new _232_ImplementQueueUsingStacks().new Solution();
-        // assert solution == ;
-        logger.warning(String.valueOf(solution));
-        logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
-    }
-    //leetcode submit region begin(Prohibit modification and deletion)
-class MyQueue {
+
+public class _232_ImplementQueueUsingStacks {
+  private static final Logger logger = Logger.getLogger(_232_ImplementQueueUsingStacks.class.toString());
+
+  public static void main(String[] args) {
+    long startTimeMillis = System.currentTimeMillis();
+    //Solution solution = new _232_ImplementQueueUsingStacks().new Solution();
+    // assert solution == ;
+    //logger.warning(String.valueOf(solution));
+    logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
+  }
+
+  //leetcode submit region begin(Prohibit modification and deletion)
+  class MyQueue {
+    private Stack<Integer> s;
 
     public MyQueue() {
-        
+      s = new Stack();
     }
-    
+
     public void push(int x) {
-        
+      Stack<Integer> temp = new Stack<>();
+      for (int i = 0; i < s.size(); i++) {
+        temp.push(s.pop());
+      }
+      s.push(x);
+      while (!temp.isEmpty()) {
+        s.push(temp.pop());
+      }
     }
-    
+
     public int pop() {
-        
+      return s.pop();
     }
-    
+
     public int peek() {
-        
+      return s.peek();
     }
-    
+
     public boolean empty() {
-        
+      return s.isEmpty();
     }
-}
+  }
 
 /**
  * Your MyQueue object will be instantiated and called as such:
