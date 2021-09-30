@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8719c4c-6879-41ae-bf3a-dbeada41b572" name="Default Changelist" comment="Easy problems">
-      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_1044_LongestDuplicateSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_1044_LongestDuplicateSubstring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_169_MajorityElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_169_MajorityElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_41_FirstMissingPositive.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_41_FirstMissingPositive.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +31,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application._54_SpiralMatrix">
+  <component name="RunManager" selected="Application._41_FirstMissingPositive">
     <configuration name="_239_SlidingWindowMaximum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_239_SlidingWindowMaximum" />
       <module name="LeetCode" />
@@ -48,15 +46,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_54_SpiralMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_54_SpiralMatrix" />
+    <configuration name="_41_FirstMissingPositive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_41_FirstMissingPositive" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_581_ShortestUnsortedContinuousSubarray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_581_ShortestUnsortedContinuousSubarray" />
+    <configuration name="_54_SpiralMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_54_SpiralMatrix" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -71,11 +69,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._41_FirstMissingPositive" />
         <item itemvalue="Application._54_SpiralMatrix" />
         <item itemvalue="Application._31_NextPermutation" />
         <item itemvalue="Application._239_SlidingWindowMaximum" />
         <item itemvalue="Application._739_DailyTemperatures" />
-        <item itemvalue="Application._581_ShortestUnsortedContinuousSubarray" />
       </list>
     </recent_temporary>
   </component>
