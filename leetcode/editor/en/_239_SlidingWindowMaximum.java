@@ -62,22 +62,47 @@
 //ue
 // 👍 7387 👎 268
 
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Deque;
 import java.util.logging.Logger;
-public class _239_SlidingWindowMaximum{
-    private static final Logger logger = Logger.getLogger(_239_SlidingWindowMaximum .class.toString());
-    public static void main(String[] args) {
-        long startTimeMillis = System.currentTimeMillis();
-        Solution solution = new _239_SlidingWindowMaximum().new Solution();
-        // assert solution == ;
-        logger.warning(String.valueOf(solution));
-        logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
-    }
-    //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+
+public class _239_SlidingWindowMaximum {
+  private static final Logger logger = Logger.getLogger(_239_SlidingWindowMaximum.class.toString());
+
+  public static void main(String[] args) {
+    long startTimeMillis = System.currentTimeMillis();
+    Solution solution = new _239_SlidingWindowMaximum().new Solution();
+    int[] nums = {1,3,1,2,0,5};
+    int k = 3;
+    solution.maxSlidingWindow(nums, k);
+    logger.warning(String.valueOf(solution));
+    logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
+  }
+
+  //leetcode submit region begin(Prohibit modification and deletion)
+  class Solution {
     public int[] maxSlidingWindow(int[] nums, int k) {
-         return null;
+      if (nums == null || k <= 0) return new int[0];
+      int[] output = new int[nums.length - k + 1];
+      int index = 0;
+      Deque<Integer> queue = new ArrayDeque<>();
+      for (int i = 0; i < nums.length; i++) {
+        while (!queue.isEmpty() && queue.peek() < i - k + 1) {
+          queue.poll(); //remove numbers out of range k
+        }
+        while (!queue.isEmpty() && nums[queue.peekLast()] < nums[i]) {
+          queue.pollLast();
+        }
+        queue.offer(i);
+        if (i >= k - 1) {
+          output[index++] = nums[queue.peek()];
+        }
+      }
+
+      return output;
     }
-}
+  }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
