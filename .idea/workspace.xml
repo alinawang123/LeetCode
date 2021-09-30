@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f8719c4c-6879-41ae-bf3a-dbeada41b572" name="Default Changelist" comment="Easy problems">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_150_EvaluateReversePolishNotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_150_EvaluateReversePolishNotation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_239_SlidingWindowMaximum.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_239_SlidingWindowMaximum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_581_ShortestUnsortedContinuousSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_581_ShortestUnsortedContinuousSubarray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_739_DailyTemperatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_739_DailyTemperatures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_84_LargestRectangleInHistogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_84_LargestRectangleInHistogram.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,14 +32,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application._150_EvaluateReversePolishNotation">
-    <configuration name="_13_RomanToInteger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_13_RomanToInteger" />
-      <module name="LeetCode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application._739_DailyTemperatures">
     <configuration name="_150_EvaluateReversePolishNotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_150_EvaluateReversePolishNotation" />
       <module name="LeetCode" />
@@ -57,6 +47,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_581_ShortestUnsortedContinuousSubarray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_581_ShortestUnsortedContinuousSubarray" />
+      <module name="LeetCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="_58_LengthOfLastWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_58_LengthOfLastWord" />
       <module name="LeetCode" />
@@ -64,8 +61,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_9_PalindromeNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_9_PalindromeNumber" />
+    <configuration name="_739_DailyTemperatures" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_739_DailyTemperatures" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -73,11 +70,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._739_DailyTemperatures" />
+        <item itemvalue="Application._581_ShortestUnsortedContinuousSubarray" />
         <item itemvalue="Application._150_EvaluateReversePolishNotation" />
         <item itemvalue="Application._20_ValidParentheses" />
         <item itemvalue="Application._58_LengthOfLastWord" />
-        <item itemvalue="Application._13_RomanToInteger" />
-        <item itemvalue="Application._9_PalindromeNumber" />
       </list>
     </recent_temporary>
   </component>
