@@ -39,7 +39,7 @@ public class _35_SearchInsertPosition{
     public static void main(String[] args) {
         long startTimeMillis = System.currentTimeMillis();
         Solution solution = new _35_SearchInsertPosition().new Solution();
-        logger.info("Solution:" + solution.searchInsert(new int[]{0, 1, 2, 3, 4, 6}, 4));
+        logger.info("Solution:" + solution.searchInsert(new int[]{ 1, 3, 4, 6}, 2));
         logger.warning(String.valueOf(solution));
         logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
     }
@@ -47,8 +47,8 @@ public class _35_SearchInsertPosition{
 class Solution {
     public int searchInsert(int[] nums, int target) {
         int low = 0, high = nums.length - 1;
-        while (low < high) {
-            int mid = (low + high) / 2;
+        while (low <= high) {
+            int mid = low + ((high-low) / 2);
             if (nums[mid] == target) return mid;
             else if (nums[mid] > target) { high = mid-1; }
             else {low = mid+1;}
