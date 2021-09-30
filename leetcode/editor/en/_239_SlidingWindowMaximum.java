@@ -75,8 +75,6 @@ public class _239_SlidingWindowMaximum{
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[] maxSlidingWindow(int[] nums, int k) {
-
-      
          return null;
     }
 }
