@@ -33,6 +33,8 @@
 // Related Topics Tree Depth-First Search Breadth-First Search Binary Tree 
 // 👍 5317 👎 292
 
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.logging.Logger;
 public class _199_BinaryTreeRightSideView{
@@ -61,7 +63,19 @@ public class _199_BinaryTreeRightSideView{
 
 class Solution {
     public List<Integer> rightSideView(TreeNode root) {
-        
+        List<Integer> res = new ArrayList<>();
+        levelHelper(res, root, 0);
+        return res;
+    }
+
+    public void levelHelper(List<Integer> res, TreeNode root, int height) {
+        if (root == null) return;
+        if (height >= res.size()) {
+            res.add(0);
+        }
+        res.set(height, root.val);
+        levelHelper(res, root.left, height + 1);
+        levelHelper(res, root.right, height + 1);
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
