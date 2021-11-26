@@ -57,18 +57,13 @@ public class _42_TrappingRainWater {
           maxWater += maxLeft - height[left];
           maxLeft = Math.max(maxLeft, height[left++]);
         } else {
-          maxWater+= maxRight-height[right];
-          maxRight=Math.max(maxRight, height[right--]);
+          maxWater += maxRight - height[right];
+          maxRight = Math.max(maxRight, height[right--]);
         }
       }
-    return maxWater;
+      return maxWater;
+    }
   }
-
-
-        return maxWater;
-
-}
-}
 //leetcode submit region end(Prohibit modification and deletion)
 
-    }
+  }
