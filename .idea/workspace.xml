@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8719c4c-6879-41ae-bf3a-dbeada41b572" name="Default Changelist" comment="Easy problems">
-      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_515_FindLargestValueInEachTreeRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_515_FindLargestValueInEachTreeRow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_687_LongestUnivaluePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_687_LongestUnivaluePath.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

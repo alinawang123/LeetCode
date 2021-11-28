@@ -32,36 +32,60 @@
 // 👍 2783 👎 590
 
 import java.util.logging.Logger;
-public class _687_LongestUnivaluePath{
-    private static final Logger logger = Logger.getLogger(_687_LongestUnivaluePath .class.toString());
-    public static void main(String[] args) {
-        long startTimeMillis = System.currentTimeMillis();
-        Solution solution = new _687_LongestUnivaluePath().new Solution();
-        // assert solution == ;
-        logger.warning(String.valueOf(solution));
-        logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
+
+public class _687_LongestUnivaluePath {
+  private static final Logger logger = Logger.getLogger(_687_LongestUnivaluePath.class.toString());
+
+  public static void main(String[] args) {
+    long startTimeMillis = System.currentTimeMillis();
+    Solution solution = new _687_LongestUnivaluePath().new Solution();
+    // assert solution == ;
+    logger.warning(String.valueOf(solution));
+    logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
+  }
+  //leetcode submit region begin(Prohibit modification and deletion)
+
+
+  public class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+
+    TreeNode() {
     }
-    //leetcode submit region begin(Prohibit modification and deletion)
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
-class Solution {
+
+    TreeNode(int val) {
+      this.val = val;
+    }
+
+    TreeNode(int val, TreeNode left, TreeNode right) {
+      this.val = val;
+      this.left = left;
+      this.right = right;
+    }
+  }
+
+  class Solution {
+    private int ans=0;
+
     public int longestUnivaluePath(TreeNode root) {
-        
+      if(root==null)return 0;
+      helper(root, root.val);
+      return ans;
     }
-}
+
+    private int helper(TreeNode root, int val) {
+      if (root == null) return 0;
+      int leftPath = helper(root.left, root.val);
+      int rightPath = helper(root.right, root.val);
+      ans = Math.max(ans, leftPath + rightPath);
+      if (root.val == val) {
+        return Math.max(leftPath + 1, rightPath + 1);
+      } else {
+        return 0;
+      }
+    }
 //leetcode submit region end(Prohibit modification and deletion)
 
+  }
 }

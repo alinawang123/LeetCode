@@ -147,6 +147,22 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/_144_BinaryTreePreorderTraversal.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_144_BinaryTreePreorderTraversal.java" />
+              <option name="questionId" value="144" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/_145_BinaryTreePostorderTraversal.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_145_BinaryTreePostorderTraversal.java" />
+              <option name="questionId" value="145" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/_148_SortList.java">
           <value>
             <LeetcodeEditor>
