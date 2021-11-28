@@ -49,6 +49,8 @@
 // Related Topics Tree Depth-First Search Breadth-First Search Binary Tree 
 // 👍 1700 👎 76
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Logger;
 public class _515_FindLargestValueInEachTreeRow{
     private static final Logger logger = Logger.getLogger(_515_FindLargestValueInEachTreeRow .class.toString());
@@ -60,24 +62,35 @@ public class _515_FindLargestValueInEachTreeRow{
         logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
     }
     //leetcode submit region begin(Prohibit modification and deletion)
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
+
+  public class TreeNode {
+      int val;
+      TreeNode left;
+      TreeNode right;
+      TreeNode() {}
+      TreeNode(int val) { this.val = val; }
+      TreeNode(int val, TreeNode left, TreeNode right) {
+          this.val = val;
+          this.left = left;
+          this.right = right;
+      }
+  }
+
 class Solution {
     public List<Integer> largestValues(TreeNode root) {
-        
+        List<Integer> res = new ArrayList<>();
+        levelHelper(res, root, 0);
+        return res;
+    }
+
+    public void levelHelper(List<Integer> res, TreeNode root, int height) {
+        if (root == null) return;
+        if (height >= res.size()) {
+            res.add(Integer.MIN_VALUE);
+        }
+        res.set(height, Math.max(root.val,res.get(height)));
+        levelHelper(res, root.left, height + 1);
+        levelHelper(res, root.right, height + 1);
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
