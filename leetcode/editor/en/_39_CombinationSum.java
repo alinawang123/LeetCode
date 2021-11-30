@@ -64,6 +64,7 @@
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.logging.Logger;
 public class _39_CombinationSum{
@@ -80,26 +81,26 @@ class Solution {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> output = new ArrayList<>();
         List<Integer> curList = new ArrayList<>();
-        Arrays.stream(candidates).sorted();
+        Arrays.sort(candidates);
         backtrack(output, curList, 0,  target, candidates);
-        System.out.printf(output.toString());
         return output;
     }
 
-        public void backtrack(List<List<Integer>> output, List<Integer> currList, int s,
+        public void backtrack(List<List<Integer>> output, List<Integer> currList, int start,
                               int target, int[] candidates) {
-
             if (target==0) {
-                output.add(currList);
+                output.add(new ArrayList<>(currList));
                 return;
             }
-
-            for (int i = s; i < candidates.length; i++) {
+            for (int i = start; i < candidates.length; i++) {
                 if(candidates[i]>target) return;
                 currList.add(candidates[i]);
-                backtrack(output, currList, s, target - candidates[i], candidates);
+                backtrack(output, currList, i, target - candidates[i], candidates);
+                System.out.printf(currList.toString());
                 currList.remove(currList.size()-1);
+                System.out.printf(currList.toString());
             }
+
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -4,6 +4,7 @@
     <list default="true" id="f8719c4c-6879-41ae-bf3a-dbeada41b572" name="Default Changelist" comment="Easy problems">
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_39_CombinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_39_CombinationSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,16 +33,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application._39_CombinationSum">
+  <component name="RunManager" selected="Application._90_SubsetsIi">
     <configuration name="_105_ConstructBinaryTreeFromPreorderAndInorderTraversal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_105_ConstructBinaryTreeFromPreorderAndInorderTraversal" />
-      <module name="LeetCode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_209_MinimumSizeSubarraySum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_209_MinimumSizeSubarraySum" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -61,8 +55,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_42_TrappingRainWater" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_42_TrappingRainWater" />
+    <configuration name="_78_Subsets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_78_Subsets" />
+      <module name="LeetCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_90_SubsetsIi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_90_SubsetsIi" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -70,11 +71,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._90_SubsetsIi" />
+        <item itemvalue="Application._78_Subsets" />
         <item itemvalue="Application._39_CombinationSum" />
         <item itemvalue="Application._22_GenerateParentheses" />
         <item itemvalue="Application._105_ConstructBinaryTreeFromPreorderAndInorderTraversal" />
-        <item itemvalue="Application._209_MinimumSizeSubarraySum" />
-        <item itemvalue="Application._42_TrappingRainWater" />
       </list>
     </recent_temporary>
   </component>
@@ -199,6 +200,16 @@
           <line>90</line>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/editor/en/_78_Subsets.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/editor/en/_78_Subsets.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="3" />
@@ -209,7 +220,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/leetcode/editor/en/_39_CombinationSum.java</url>
-          <line>69</line>
+          <line>70</line>
           <properties field="logger" class="_39_CombinationSum" />
           <option name="timeStamp" value="75" />
         </line-breakpoint>
