@@ -29,7 +29,7 @@ public class _131_PalindromePartitioning{
     public static void main(String[] args) {
         long startTimeMillis = System.currentTimeMillis();
         Solution solution = new _131_PalindromePartitioning().new Solution();
-        // assert solution == ;
+        solution.partition( "aab");
         logger.warning(String.valueOf(solution));
         logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
     }
@@ -50,6 +50,7 @@ class Solution {
                     if(isPalindrome(s, start, i)){
                         curList.add(s.substring(start, i + 1));
                         backtrack(list, curList, s, i + 1);
+                        System.out.println(curList.toString());
                         curList.remove(curList.size() - 1);
                     }
                 }
