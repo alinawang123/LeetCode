@@ -595,6 +595,22 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/_55_JumpGame.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_55_JumpGame.java" />
+              <option name="questionId" value="55" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/_56_MergeIntervals.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_56_MergeIntervals.java" />
+              <option name="questionId" value="56" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/_581_ShortestUnsortedContinuousSubarray.java">
           <value>
             <LeetcodeEditor>
