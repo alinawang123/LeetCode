@@ -64,7 +64,7 @@ public class _376_WiggleSubsequence {
   public static void main(String[] args) {
     long startTimeMillis = System.currentTimeMillis();
     Solution solution = new _376_WiggleSubsequence().new Solution();
-    int[] nums = new int[]{1,2,3,4,5,6,7,8,9};
+    int[] nums = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
     solution.wiggleMaxLength(nums);
     logger.warning(String.valueOf(solution));
     logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
@@ -73,37 +73,24 @@ public class _376_WiggleSubsequence {
   //leetcode submit region begin(Prohibit modification and deletion)
   class Solution {
     public int wiggleMaxLength(int[] nums) {
-      if(nums.length<2) return nums.length;
-      int k = 0;
-      while (k < nums.length - 1 && nums[k] == nums[k + 1]) {  //Skips all the same numbers from series beginning eg 5, 5, 5, 1
-        k++;
+      if (nums.length < 2) return nums.length;
+      int i = 1;
+      for (; i < nums.length; i++) {
+        if (nums[i] != nums[i - 1]) break;
       }
-      if (k == nums.length - 1) {
-        return 1;
-      }
+      if (i == nums.length) return 1;
+      boolean isIncreasing = nums[i] > nums[i - 1];
+      i++;
       int res = 2;
-      int up = 0;
-      int down = 0;
-      for (int i = 1; i < nums.length; i++) {
-        if(nums[i] > nums[i - 1]) {
-          if(down>=1) {
-            res+=1;
-            up+=1;
-            down=0;
-          } else{
-            up+=1;
-          }
-        } else if (nums[i]<nums[i-1]){
-          if(up>=1) {
-            res+=1;
-            down += 1;
-            up = 0;
-          } else{
-            down+=1;
-          }
+      for (; i < nums.length; i++) {
+        if (!isIncreasing && nums[i] > nums[i - 1]) {
+          res += 1;
+          isIncreasing = true;
+        } else if (isIncreasing && nums[i] < nums[i - 1]) {
+          res += 1;
+          isIncreasing = false;
         }
       }
-      //System.out.println(res);
       return res;
     }
   }
