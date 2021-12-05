@@ -33,7 +33,14 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application._376_WiggleSubsequence">
+  <component name="RunManager" selected="Application._121_BestTimeToBuyAndSellStock">
+    <configuration name="_121_BestTimeToBuyAndSellStock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_121_BestTimeToBuyAndSellStock" />
+      <module name="LeetCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="_131_PalindromePartitioning" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_131_PalindromePartitioning" />
       <module name="LeetCode" />
@@ -43,13 +50,6 @@
     </configuration>
     <configuration name="_376_WiggleSubsequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_376_WiggleSubsequence" />
-      <module name="LeetCode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_78_Subsets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_78_Subsets" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -71,11 +71,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._121_BestTimeToBuyAndSellStock" />
         <item itemvalue="Application._376_WiggleSubsequence" />
         <item itemvalue="Application._79_WordSearch" />
         <item itemvalue="Application._131_PalindromePartitioning" />
         <item itemvalue="Application._90_SubsetsIi" />
-        <item itemvalue="Application._78_Subsets" />
       </list>
     </recent_temporary>
   </component>

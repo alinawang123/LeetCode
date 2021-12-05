@@ -115,6 +115,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/_121_BestTimeToBuyAndSellStock.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_121_BestTimeToBuyAndSellStock.java" />
+              <option name="questionId" value="121" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/_124_BinaryTreeMaximumPathSum.java">
           <value>
             <LeetcodeEditor>
@@ -200,6 +208,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_150_EvaluateReversePolishNotation.java" />
               <option name="questionId" value="150" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/_152_MaximumProductSubarray.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_152_MaximumProductSubarray.java" />
+              <option name="questionId" value="152" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -315,6 +331,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/_217_ContainsDuplicate.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_217_ContainsDuplicate.java" />
+              <option name="questionId" value="217" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/_21_MergeTwoSortedLists.java">
           <value>
             <LeetcodeEditor>
@@ -368,6 +392,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_236_LowestCommonAncestorOfABinaryTree.java" />
               <option name="questionId" value="236" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/_238_ProductOfArrayExceptSelf.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/_238_ProductOfArrayExceptSelf.java" />
+              <option name="questionId" value="238" />
             </LeetcodeEditor>
           </value>
         </entry>
