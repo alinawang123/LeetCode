@@ -58,8 +58,8 @@ public class _191_NumberOf1Bits{
     public static void main(String[] args) {
         long startTimeMillis = System.currentTimeMillis();
         Solution solution = new _191_NumberOf1Bits().new Solution();
-        int n = 00000000000000000000000000001011;
-        solution.hammingWeight(n);
+        //int n = 00000000000000000000000000001011;
+        //solution.hammingWeight(n);
         logger.warning(String.valueOf(solution));
         logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
     }
