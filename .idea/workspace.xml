@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8719c4c-6879-41ae-bf3a-dbeada41b572" name="Default Changelist" comment="Easy problems">
-      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_152_MaximumProductSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_152_MaximumProductSubarray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_15_ThreeSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_15_ThreeSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +33,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application._152_MaximumProductSubarray">
+  <component name="RunManager" selected="Application._15_ThreeSum">
     <configuration name="_121_BestTimeToBuyAndSellStock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_121_BestTimeToBuyAndSellStock" />
       <module name="LeetCode" />
@@ -42,15 +41,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_131_PalindromePartitioning" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_131_PalindromePartitioning" />
+    <configuration name="_152_MaximumProductSubarray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_152_MaximumProductSubarray" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_152_MaximumProductSubarray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_152_MaximumProductSubarray" />
+    <configuration name="_15_ThreeSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_15_ThreeSum" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -72,11 +71,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._15_ThreeSum" />
         <item itemvalue="Application._152_MaximumProductSubarray" />
         <item itemvalue="Application._121_BestTimeToBuyAndSellStock" />
         <item itemvalue="Application._376_WiggleSubsequence" />
         <item itemvalue="Application._79_WordSearch" />
-        <item itemvalue="Application._131_PalindromePartitioning" />
       </list>
     </recent_temporary>
   </component>
