@@ -4,7 +4,6 @@
     <list default="true" id="f8719c4c-6879-41ae-bf3a-dbeada41b572" name="Default Changelist" comment="Easy problems">
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_191_NumberOf1Bits.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_191_NumberOf1Bits.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +33,9 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application._191_NumberOf1Bits">
-    <configuration name="_121_BestTimeToBuyAndSellStock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_121_BestTimeToBuyAndSellStock" />
+  <component name="RunManager" selected="Application._1143_LongestCommonSubsequence">
+    <configuration name="_1143_LongestCommonSubsequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_1143_LongestCommonSubsequence" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -63,8 +62,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_376_WiggleSubsequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_376_WiggleSubsequence" />
+    <configuration name="_300_LongestIncreasingSubsequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_300_LongestIncreasingSubsequence" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -72,11 +71,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._1143_LongestCommonSubsequence" />
+        <item itemvalue="Application._300_LongestIncreasingSubsequence" />
         <item itemvalue="Application._191_NumberOf1Bits" />
         <item itemvalue="Application._15_ThreeSum" />
         <item itemvalue="Application._152_MaximumProductSubarray" />
-        <item itemvalue="Application._121_BestTimeToBuyAndSellStock" />
-        <item itemvalue="Application._376_WiggleSubsequence" />
       </list>
     </recent_temporary>
   </component>
@@ -210,6 +209,21 @@
           <url>file://$PROJECT_DIR$/leetcode/editor/en/_78_Subsets.java</url>
           <line>65</line>
           <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/editor/en/_300_LongestIncreasingSubsequence.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/editor/en/_300_LongestIncreasingSubsequence.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/editor/en/_300_LongestIncreasingSubsequence.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="103" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
