@@ -49,21 +49,18 @@ public class _55_JumpGame {
   //leetcode submit region begin(Prohibit modification and deletion)
   class Solution {
     public boolean canJump(int[] nums) {
-      int curEnd = 0;
+      int curEnd = nums[0];
       int curFarthest = 0;
       for (int i = 0; i < nums.length; i++) {
-        curFarthest = Math.max(curFarthest, i + nums[i]);
-        if (i == curEnd) {
+        curFarthest = Math.max(curFarthest, i+nums[i]);
+        if(i== curEnd){
           curEnd = curFarthest;
         }
       }
-      if (curEnd < nums.length-1) {
-        return false;
-      } else {
-        return true;
+      return curEnd >= nums.length - 1;
       }
     }
   }
 //leetcode submit region end(Prohibit modification and deletion)
 
-}
+

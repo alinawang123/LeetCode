@@ -5,7 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_55_JumpGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_55_JumpGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/all.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_91_DecodeWays.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_91_DecodeWays.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,14 +35,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application._198_HouseRobber">
-    <configuration name="_1143_LongestCommonSubsequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_1143_LongestCommonSubsequence" />
-      <module name="LeetCode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application._91_DecodeWays">
     <configuration name="_198_HouseRobber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_198_HouseRobber" />
       <module name="LeetCode" />
@@ -50,8 +43,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_300_LongestIncreasingSubsequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_300_LongestIncreasingSubsequence" />
+    <configuration name="_213_HouseRobberIi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_213_HouseRobberIi" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -71,13 +64,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_91_DecodeWays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_91_DecodeWays" />
+      <module name="LeetCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._91_DecodeWays" />
+        <item itemvalue="Application._213_HouseRobberIi" />
         <item itemvalue="Application._198_HouseRobber" />
         <item itemvalue="Application._55_JumpGame" />
         <item itemvalue="Application._377_CombinationSumIv" />
-        <item itemvalue="Application._1143_LongestCommonSubsequence" />
-        <item itemvalue="Application._300_LongestIncreasingSubsequence" />
       </list>
     </recent_temporary>
   </component>

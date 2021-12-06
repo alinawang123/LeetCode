@@ -76,38 +76,43 @@
 // 👍 5261 👎 3578
 
 import java.util.logging.Logger;
-public class _91_DecodeWays{
-    private static final Logger logger = Logger.getLogger(_91_DecodeWays .class.toString());
-    public static void main(String[] args) {
-        long startTimeMillis = System.currentTimeMillis();
-        Solution solution = new _91_DecodeWays().new Solution();
-        // assert solution == ;
-        logger.warning(String.valueOf(solution));
-        logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
-    }
-    //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+
+public class _91_DecodeWays {
+  private static final Logger logger = Logger.getLogger(_91_DecodeWays.class.toString());
+
+  public static void main(String[] args) {
+    long startTimeMillis = System.currentTimeMillis();
+    Solution solution = new _91_DecodeWays().new Solution();
+    String s = "01";
+    System.out.println(solution.numDecodings(s));
+    logger.warning(String.valueOf(solution));
+    logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
+  }
+
+  //leetcode submit region begin(Prohibit modification and deletion)
+  class Solution {
     public int numDecodings(String s) {
-        if (s == null || s.length() == 0) {
-            return 0;
+      if (s == null || s.length() == 0) {
+        return 0;
+      }
+      int n = s.length();
+      int[] dp = new int[n + 1];
+      if (s.charAt(0) == '0') return 0;
+      dp[0] = 1;
+      dp[1] = 1;
+      for (int i = 2; i <= n; i++) {
+        String first = s.substring(i - 1, i);
+        String second = s.substring(i - 2, i);
+        if (1 <= Integer.parseInt(first) && Integer.parseInt(first) <= 9) {
+          dp[i] += dp[i - 1];
         }
-        int n = s.length();
-        int[] dp = new int[n + 1];
-        dp[0] = 1;
-        dp[1] = s.charAt(0) != '0' ? 1 : 0;
-        for (int i = 2; i <= n; i++) {
-            int first = Integer.parseInt(s.substring(i - 1, i));
-            int second = Integer.parseInt(s.substring(i - 2, i));
-            if (first >= 1 && first <= 9) {
-                dp[i] += dp[i-1];
-            }
-            if (second >= 10 && second <= 26) {
-                dp[i] += dp[i-2];
-            }
+        if (10 <= Integer.parseInt(second) && Integer.parseInt(second) <= 26) {
+          dp[i] += dp[i - 2];
         }
-        return dp[n];
+      }
+      return dp[n];
     }
-}
+  }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
