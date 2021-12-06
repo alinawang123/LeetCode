@@ -4,6 +4,8 @@
     <list default="true" id="f8719c4c-6879-41ae-bf3a-dbeada41b572" name="Default Changelist" comment="Easy problems">
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_55_JumpGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_55_JumpGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/all.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +35,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application._1143_LongestCommonSubsequence">
+  <component name="RunManager" selected="Application._198_HouseRobber">
     <configuration name="_1143_LongestCommonSubsequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_1143_LongestCommonSubsequence" />
       <module name="LeetCode" />
@@ -41,22 +43,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_152_MaximumProductSubarray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_152_MaximumProductSubarray" />
-      <module name="LeetCode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_15_ThreeSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_15_ThreeSum" />
-      <module name="LeetCode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_191_NumberOf1Bits" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_191_NumberOf1Bits" />
+    <configuration name="_198_HouseRobber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_198_HouseRobber" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -69,13 +57,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_377_CombinationSumIv" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_377_CombinationSumIv" />
+      <module name="LeetCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_55_JumpGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_55_JumpGame" />
+      <module name="LeetCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._198_HouseRobber" />
+        <item itemvalue="Application._55_JumpGame" />
+        <item itemvalue="Application._377_CombinationSumIv" />
         <item itemvalue="Application._1143_LongestCommonSubsequence" />
         <item itemvalue="Application._300_LongestIncreasingSubsequence" />
-        <item itemvalue="Application._191_NumberOf1Bits" />
-        <item itemvalue="Application._15_ThreeSum" />
-        <item itemvalue="Application._152_MaximumProductSubarray" />
       </list>
     </recent_temporary>
   </component>

@@ -40,7 +40,8 @@ public class _55_JumpGame {
   public static void main(String[] args) {
     long startTimeMillis = System.currentTimeMillis();
     Solution solution = new _55_JumpGame().new Solution();
-    // assert solution == ;
+    int[] nums = new int[]{2, 3, 1, 1, 4};
+    System.out.println(solution.canJump(nums));
     logger.warning(String.valueOf(solution));
     logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
   }
@@ -48,14 +49,15 @@ public class _55_JumpGame {
   //leetcode submit region begin(Prohibit modification and deletion)
   class Solution {
     public boolean canJump(int[] nums) {
-      int curEnd = 0, curFarthest = 0;
-      for (int i = 0; i < nums.length - 1; i++) {
+      int curEnd = 0;
+      int curFarthest = 0;
+      for (int i = 0; i < nums.length; i++) {
         curFarthest = Math.max(curFarthest, i + nums[i]);
         if (i == curEnd) {
           curEnd = curFarthest;
         }
       }
-      if (curEnd < nums.length - 1) {
+      if (curEnd < nums.length-1) {
         return false;
       } else {
         return true;
