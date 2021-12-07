@@ -58,6 +58,7 @@ public class _300_LongestIncreasingSubsequence{
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int lengthOfLIS(int[] nums) {
+        // kick your ass `_`
         int[] tails = new int[nums.length];
         int size = 0;
         for (int x : nums) {
