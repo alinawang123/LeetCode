@@ -81,55 +81,64 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
+import java.util.jar.JarEntry;
 import java.util.logging.Logger;
-public class _133_CloneGraph{
-    private static final Logger logger = Logger.getLogger(_133_CloneGraph .class.toString());
-    public static void main(String[] args) {
-        long startTimeMillis = System.currentTimeMillis();
-        Solution solution = new _133_CloneGraph().new Solution();
-        // assert solution == ;
-        logger.warning(String.valueOf(solution));
-        logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
-    }
-    //leetcode submit region begin(Prohibit modification and deletion)
+
+public class _133_CloneGraph {
+  private static final Logger logger = Logger.getLogger(_133_CloneGraph.class.toString());
+
+  public static void main(String[] args) {
+    long startTimeMillis = System.currentTimeMillis();
+    Solution solution = new _133_CloneGraph().new Solution();
+    // assert solution == ;
+    logger.warning(String.valueOf(solution));
+    logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
+  }
+
+  //leetcode submit region begin(Prohibit modification and deletion)
 // Definition for a Node.
-class Node {
+  class Node {
     public int val;
     public List<Node> neighbors;
-    public Node() {
-        val = 0;
-        neighbors = new ArrayList<Node>();
-    }
-    public Node(int _val) {
-        val = _val;
-        neighbors = new ArrayList<Node>();
-    }
-    public Node(int _val, ArrayList<Node> _neighbors) {
-        val = _val;
-        neighbors = _neighbors;
-    }
-}
 
-class Solution {
+    public Node() {
+      val = 0;
+      neighbors = new ArrayList<Node>();
+    }
+
+    public Node(int _val) {
+      val = _val;
+      neighbors = new ArrayList<Node>();
+    }
+
+    public Node(int _val, ArrayList<Node> _neighbors) {
+      val = _val;
+      neighbors = _neighbors;
+    }
+  }
+
+  class Solution {
     private HashMap<Integer, Node> map = new HashMap<>();
+
     public Node cloneGraph(Node node) {
-        return clone(node);
+      return clone(node);
     }
 
     private Node clone(Node node) {
-        if (node == null) return null;
+      if (node == null) return null;
 
-        if (map.containsKey(node.val)) {
-            return map.get(node.val);
-        }
-        Node clone = new Node(node.val);
-        map.put(clone.val, clone);
-        for (Node neighbor : node.neighbors) {
-            clone.neighbors.add(clone(neighbor));
-        }
-        return clone;
+      if (map.containsKey(node.val)) {
+        return map.get(node.val);
+      }
+      Node newNode = new Node(node.val);
+      map.put(newNode.val, newNode);
+      for (Node neighbor : node.neighbors) {
+        newNode.neighbors.add(clone(neighbor));
+      }
+      return newNode;
     }
-}
+  }
 //leetcode submit region end(Prohibit modification and deletion)
 //public Node cloneGraph(Node node) {
 //    if (node == null) return null;
@@ -155,5 +164,38 @@ class Solution {
 //
 //    return newNode;
 //}
+
+  public Node cloneGraph(Node node) {
+    if (node == null) return null; //validate input
+
+    Node newNode = new Node(node.val); //create the root node to return
+    HashMap<Integer, Node> map = new HashMap<>(); //store visited nodes, map the node value to
+    // the node so we can get the node by its value
+    map.put(newNode.val, newNode); //add first node to the map
+
+    Queue<Node> queue = new LinkedList<>();//create a queue to store **original node** that
+    // need to be visited
+    queue.add(node); //add the original input node to queue
+
+    while (!queue.isEmpty()) {
+      Node n = queue.poll(); //pop the first node on the queue
+      for (Node neighbor : n.neighbors) { //iterate through the node's neighbor
+        if (!map.containsKey(neighbor.val)) { //check if the node's neighbor has been visited
+          // if not
+          // visited
+          map.put(neighbor.val, new Node(neighbor.val)); //add the node's neighbor's
+          // value to the map
+          queue.add(neighbor); //add the original neighbor to queue
+        }
+        map.get(n.val).neighbors.add(map.get(neighbor.val)); //add neighbor to the new
+        // created node
+
+      }
+    }
+    return newNode;
+
+
+  }
+
 
 }

@@ -44,53 +44,81 @@
 // 
 // 👍 7754 👎 310
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 import java.util.logging.Logger;
-public class _207_CourseSchedule{
-    private static final Logger logger = Logger.getLogger(_207_CourseSchedule .class.toString());
-    public static void main(String[] args) {
-        long startTimeMillis = System.currentTimeMillis();
-        Solution solution = new _207_CourseSchedule().new Solution();
-        // assert solution == ;
-        logger.warning(String.valueOf(solution));
-        logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
-    }
-    //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public boolean canFinish(int numCourses, int[][] prerequisites) {
-        int[][] table = new int[numCourses][numCourses];
-        int[] indegree = new int[numCourses];
-        for (int i = 0; i < prerequisites.length; i++) {
-            int cur = prerequisites[i][0];
-            int pre = prerequisites[i][1];
-            if(table[cur][pre]==0){
-                indegree[cur]++;
-            }
-            table[cur][pre] = 1;
-        }
-        int count = 0;
-        Queue<Integer> queue = new LinkedList<>();
-        for (int i = 0; i < numCourses; i++) {
-            if (indegree[i] == 0) {
-                queue.offer(i);
-            }
-        }
-        while(!queue.isEmpty()){
-            int course = queue.poll();
-            count++;
-            for (int i = 0; i < numCourses; i++) {
-                if(table[i][course] != 0) {
-                    indegree[i]--;
-                    if(indegree[i] ==0){
-                        queue.offer(i);
-                    }
-                }
-            }
-        }
-        return count==numCourses;
-    }
-}
+
+public class _207_CourseSchedule {
+  private static final Logger logger = Logger.getLogger(_207_CourseSchedule.class.toString());
+
+  public static void main(String[] args) {
+    long startTimeMillis = System.currentTimeMillis();
+    Solution solution = new _207_CourseSchedule().new Solution();
+    // assert solution == ;
+    logger.warning(String.valueOf(solution));
+    logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
+  }
+
+  //leetcode submit region begin(Prohibit modification and deletion)
+  class Solution {
+//    public boolean canFinish(int numCourses, int[][] prerequisites) {
+//        int[][] table = new int[numCourses][numCourses];//BFS method
+//        int[] indegree = new int[numCourses];
+//        for (int i = 0; i < prerequisites.length; i++) {
+//            int cur = prerequisites[i][0];
+//            int pre = prerequisites[i][1];
+//            if(table[cur][pre]==0){
+//                indegree[cur]++;
+//            }
+//            table[cur][pre] = 1;
+//        }
+//        int count = 0;
+//        Queue<Integer> queue = new LinkedList<>();
+//        for (int i = 0; i < numCourses; i++) {
+//            if (indegree[i] == 0) {
+//                queue.offer(i);
+//            }
+//        }
+//        while(!queue.isEmpty()){
+//            int course = queue.poll();
+//            count++;
+//            for (int i = 0; i < numCourses; i++) {
+//                if(table[i][course] != 0) {
+//                    indegree[i]--;
+//                    if(indegree[i] ==0){
+//                        queue.offer(i);
+//                    }
+//                }
+//            }
+//        }
+//        return count==numCourses;
+//    }
+
+  //Shorter Version of BFS using adj list
+
+//    public boolean canFinish(int numCourses, int[][] prereq) {
+//      List<Integer>[] adj = new List[numCourses];
+//      int[] indegree = new int[numCourses];
+//      for (int i = 0; i < numCourses; i++) adj[i] = new ArrayList<>();
+//      for (int[] req : prereq) {
+//        adj[req[1]].add(req[0]);
+//        indegree[req[0]]++;
+//      }
+//
+//      Queue<Integer> q = new LinkedList<>();
+//      for (int i = 0; i < numCourses; i++)
+//        if (indegree[i] == 0) q.offer(i);
+//
+//      int cnt = 0;
+//      for (; !q.isEmpty(); cnt++)
+//        for (int crs : adj[q.poll()])
+//          if (--indegree[crs] == 0) q.offer(crs);
+//      return cnt == numCourses;
+//    }
+
+  }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
