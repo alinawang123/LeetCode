@@ -63,7 +63,7 @@ public class _417_PacificAtlanticWaterFlow {
 
   //leetcode submit region begin(Prohibit modification and deletion)
   class Solution {
-    private static final int[][] DIRECTIONS = new int[][]{{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
+    private final int[][] DIRECTIONS = new int[][]{{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
 
     public List<List<Integer>> pacificAtlantic(int[][] heights) {
       if (heights.length == 0 || heights[0].length == 0) {
