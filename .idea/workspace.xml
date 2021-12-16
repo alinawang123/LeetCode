@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8719c4c-6879-41ae-bf3a-dbeada41b572" name="Default Changelist" comment="Easy problems">
-      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_417_PacificAtlanticWaterFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_417_PacificAtlanticWaterFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/_260_SingleNumberIii$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/_260_SingleNumberIii$Solution.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +33,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application._260_SingleNumberIii">
+  <component name="RunManager" selected="Application._3_LongestSubstringWithoutRepeatingCharacters">
     <configuration name="_198_HouseRobber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_198_HouseRobber" />
       <module name="LeetCode" />
@@ -56,8 +55,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_55_JumpGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_55_JumpGame" />
+    <configuration name="_3_LongestSubstringWithoutRepeatingCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_3_LongestSubstringWithoutRepeatingCharacters" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -72,11 +71,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._3_LongestSubstringWithoutRepeatingCharacters" />
         <item itemvalue="Application._260_SingleNumberIii" />
         <item itemvalue="Application._91_DecodeWays" />
         <item itemvalue="Application._213_HouseRobberIi" />
         <item itemvalue="Application._198_HouseRobber" />
-        <item itemvalue="Application._55_JumpGame" />
       </list>
     </recent_temporary>
   </component>
