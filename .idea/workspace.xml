@@ -2,15 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8719c4c-6879-41ae-bf3a-dbeada41b572" name="Default Changelist" comment="Easy problems">
+      <change afterPath="$PROJECT_DIR$/leetcode/sorting/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/sorting/StableSelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/LeetCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LeetCode.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_76_MinimumWindowSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_76_MinimumWindowSubstring.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leetcode/editor/en/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/all.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/james/leetcode/editor/en/_18_FourSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/_76_MinimumWindowSubstring$Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/_76_MinimumWindowSubstring.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/all.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,32 +40,41 @@
   <component name="ProjectId" id="1rdAcI3VCdmUR94zk29UINiaW3W" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
-  <component name="RunManager" selected="Application._424_LongestRepeatingCharacterReplacement">
-    <configuration name="_213_HouseRobberIi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_213_HouseRobberIi" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/leetcode" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.StableSelectionSort">
+    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BubbleSort" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_260_SingleNumberIii" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_260_SingleNumberIii" />
+    <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SelectionSort" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_3_LongestSubstringWithoutRepeatingCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_3_LongestSubstringWithoutRepeatingCharacters" />
+    <configuration name="StableSelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StableSelectionSort" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -64,8 +87,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_91_DecodeWays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_91_DecodeWays" />
+    <configuration name="_49_GroupAnagrams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_49_GroupAnagrams" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -73,11 +96,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StableSelectionSort" />
+        <item itemvalue="Application.BubbleSort" />
+        <item itemvalue="Application.SelectionSort" />
+        <item itemvalue="Application._49_GroupAnagrams" />
         <item itemvalue="Application._424_LongestRepeatingCharacterReplacement" />
-        <item itemvalue="Application._3_LongestSubstringWithoutRepeatingCharacters" />
-        <item itemvalue="Application._260_SingleNumberIii" />
-        <item itemvalue="Application._91_DecodeWays" />
-        <item itemvalue="Application._213_HouseRobberIi" />
       </list>
     </recent_temporary>
   </component>
@@ -238,11 +261,6 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="stack" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LeetCode$_22_GenerateParentheses.ic" NAME="_22_GenerateParentheses Coverage Results" MODIFIED="1638219026273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
