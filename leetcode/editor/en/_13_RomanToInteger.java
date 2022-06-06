@@ -96,20 +96,20 @@ public class _13_RomanToInteger {
   class Solution {
     public int romanToInt(String s) {
       if (s == null || s.length() < 1 || s.length() > 15) return -1;
-      HashMap<Character, Integer> dict = new HashMap<>();
-      dict.put('I', 1);
-      dict.put('V', 5);
-      dict.put('X', 10);
-      dict.put('L', 50);
-      dict.put('C', 100);
-      dict.put('D', 500);
-      dict.put('M', 1000);
-      int result = dict.get(s.charAt(s.length() - 1));
-      for (int i = s.length() - 2; i >= 0; i--){
-        if (dict.get(s.charAt(i)) >= dict.get(s.charAt(i + 1))) {
-          result += dict.get(s.charAt(i));
+      HashMap<Character, Integer> map = new HashMap<>();
+      map.put('I', 1);
+      map.put('V', 5);
+      map.put('X', 10);
+      map.put('L', 50);
+      map.put('C', 100);
+      map.put('D', 500);
+      map.put('M', 1000);
+      int result = map.get(s.charAt(s.length() - 1));
+      for (int i = s.length() - 2; i >= 0; i--) {
+        if (map.get(s.charAt(i)) >= map.get(s.charAt(i + 1))) {
+          result += map.get(s.charAt(i));
         } else {
-          result -= dict.get(s.charAt(i));
+          result -= map.get(s.charAt(i));
         }
       }
       return result;

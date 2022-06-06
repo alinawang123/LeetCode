@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8719c4c-6879-41ae-bf3a-dbeada41b572" name="Default Changelist" comment="Easy problems">
-      <change afterPath="$PROJECT_DIR$/leetcode/sorting/BubbleSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_13_RomanToInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_13_RomanToInteger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_20_ValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_20_ValidParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_21_MergeTwoSortedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_21_MergeTwoSortedLists.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,14 +44,14 @@
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/leetcode" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StableSelectionSort">
+  <component name="RunManager" selected="Application._20_ValidParentheses">
     <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BubbleSort" />
       <module name="LeetCode" />
@@ -71,15 +73,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_424_LongestRepeatingCharacterReplacement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_424_LongestRepeatingCharacterReplacement" />
+    <configuration name="_13_RomanToInteger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_13_RomanToInteger" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_49_GroupAnagrams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_49_GroupAnagrams" />
+    <configuration name="_20_ValidParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_20_ValidParentheses" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -87,11 +89,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._20_ValidParentheses" />
+        <item itemvalue="Application._13_RomanToInteger" />
         <item itemvalue="Application.StableSelectionSort" />
         <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.SelectionSort" />
-        <item itemvalue="Application._49_GroupAnagrams" />
-        <item itemvalue="Application._424_LongestRepeatingCharacterReplacement" />
       </list>
     </recent_temporary>
   </component>
@@ -235,6 +237,26 @@
           <url>file://$PROJECT_DIR$/leetcode/editor/en/_260_SingleNumberIii.java</url>
           <line>86</line>
           <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/editor/en/_20_ValidParentheses.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/editor/en/_20_ValidParentheses.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/editor/en/_20_ValidParentheses.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/editor/en/_20_ValidParentheses.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="91" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
