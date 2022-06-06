@@ -26,34 +26,36 @@
 // 👍 6566 👎 291
 
 import java.util.logging.Logger;
-public class _169_MajorityElement{
-    private static final Logger logger = Logger.getLogger(_169_MajorityElement .class.toString());
-    public static void main(String[] args) {
-        long startTimeMillis = System.currentTimeMillis();
-        Solution solution = new _169_MajorityElement().new Solution();
-        // assert solution == ;
-        logger.warning(String.valueOf(solution));
-        logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
-    }
-    //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+
+public class _169_MajorityElement {
+  private static final Logger logger = Logger.getLogger(_169_MajorityElement.class.toString());
+
+  public static void main(String[] args) {
+    long startTimeMillis = System.currentTimeMillis();
+    Solution solution = new _169_MajorityElement().new Solution();
+    // assert solution == ;
+    logger.warning(String.valueOf(solution));
+    logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
+  }
+
+  //leetcode submit region begin(Prohibit modification and deletion)
+  class Solution {
     public int majorityElement(int[] nums) {
-
-      int major=nums[0], count = 1;
-      for(int i=1; i<nums.length;i++){
-        if(count==0){
+      int major = nums[0];
+      int count = 1;
+      for (int i = 1; i < nums.length; i++) {
+        if (count == 0) {
           count++;
-          major=nums[i];
-        }else if(major==nums[i]){
+          major = nums[i];
+        } else if (nums[i] == major) {
           count++;
-        }else count--;
-
+        } else {
+          count--;
+        }
       }
       return major;
-
-
     }
-}
+  }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
