@@ -90,6 +90,8 @@ public class _141_LinkedListCycle {
       return false;
     }
   }
+
+  //time complexity is O(n)
 //leetcode submit region end(Prohibit modification and deletion)
 
 }

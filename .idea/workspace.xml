@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f8719c4c-6879-41ae-bf3a-dbeada41b572" name="Default Changelist" comment="Easy problems">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_13_RomanToInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_13_RomanToInteger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_20_ValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_20_ValidParentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_21_MergeTwoSortedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_21_MergeTwoSortedLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_141_LinkedListCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_141_LinkedListCycle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,16 +49,9 @@
       <recent name="$PROJECT_DIR$/leetcode" />
     </key>
   </component>
-  <component name="RunManager" selected="Application._20_ValidParentheses">
+  <component name="RunManager" selected="Application._141_LinkedListCycle">
     <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BubbleSort" />
-      <module name="LeetCode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SelectionSort" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -80,6 +71,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_141_LinkedListCycle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_141_LinkedListCycle" />
+      <module name="LeetCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="_20_ValidParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_20_ValidParentheses" />
       <module name="LeetCode" />
@@ -89,11 +87,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._141_LinkedListCycle" />
         <item itemvalue="Application._20_ValidParentheses" />
         <item itemvalue="Application._13_RomanToInteger" />
         <item itemvalue="Application.StableSelectionSort" />
         <item itemvalue="Application.BubbleSort" />
-        <item itemvalue="Application.SelectionSort" />
       </list>
     </recent_temporary>
   </component>
