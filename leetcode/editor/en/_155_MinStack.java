@@ -45,37 +45,44 @@
 // Related Topics Stack Design 
 // 👍 8262 👎 631
 
+import java.util.Stack;
 import java.util.logging.Logger;
 public class _155_MinStack{
     private static final Logger logger = Logger.getLogger(_155_MinStack .class.toString());
     public static void main(String[] args) {
         long startTimeMillis = System.currentTimeMillis();
-        Solution solution = new _155_MinStack().new Solution();
+        //Solution solution = new _155_MinStack().new Solution();
         // assert solution == ;
-        logger.warning(String.valueOf(solution));
+        //logger.warning(String.valueOf(solution));
         logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class MinStack {
+    private Stack<int[]> stack = new Stack<>();
 
     public MinStack() {
         
     }
     
     public void push(int val) {
-        
+        if(stack.isEmpty()) {
+            stack.push(new int[]{val, val});
+        } else {
+            int currentMin = stack.peek()[1];
+            stack.push(new int[]{val, Math.min(currentMin, val)});
+        }
     }
     
     public void pop() {
-        
+        stack.pop();
     }
     
     public int top() {
-        
+       return stack.peek()[0];
     }
     
     public int getMin() {
-        
+        return stack.peek()[1];
     }
 }
 

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f8719c4c-6879-41ae-bf3a-dbeada41b572" name="Default Changelist" comment="Easy problems">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_141_LinkedListCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_141_LinkedListCycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_155_MinStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_155_MinStack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,14 +269,6 @@
           <line>70</line>
           <properties field="logger" class="_39_CombinationSum" />
           <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/leetcode/sorting/SelectionSort.java</url>
-          <line>2</line>
-          <properties class="SelectionSort" method="sort">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="83" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
