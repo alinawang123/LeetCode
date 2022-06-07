@@ -42,37 +42,41 @@
 // 👍 5551 👎 721
 
 import java.util.logging.Logger;
-public class _202_HappyNumber{
-    private static final Logger logger = Logger.getLogger(_202_HappyNumber .class.toString());
-    public static void main(String[] args) {
-        long startTimeMillis = System.currentTimeMillis();
-        Solution solution = new _202_HappyNumber().new Solution();
-        // assert solution == ;
-        logger.warning(String.valueOf(solution));
-        logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
-    }
-    //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-        public int getNext(int n) {
-            int totalSum = 0;
-            while (n > 0) {
-                int d = n % 10;
-                n = n / 10;
-                totalSum += d * d;
-            }
-            return totalSum;
-        }
 
-        public boolean isHappy(int n) {
-            int slowRunner = n;
-            int fastRunner = getNext(n);
-            while (fastRunner != 1 && slowRunner != fastRunner) {
-                slowRunner = getNext(slowRunner);
-                fastRunner = getNext(getNext(fastRunner));
-            }
-            return fastRunner == 1;
-        }
+public class _202_HappyNumber {
+  private static final Logger logger = Logger.getLogger(_202_HappyNumber.class.toString());
+
+  public static void main(String[] args) {
+    long startTimeMillis = System.currentTimeMillis();
+    Solution solution = new _202_HappyNumber().new Solution();
+    // assert solution == ;
+    logger.warning(String.valueOf(solution));
+    logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
+  }
+
+  //leetcode submit region begin(Prohibit modification and deletion)
+  class Solution {
+    public int getNext(int n) {
+      int next = 0;
+      while (n > 0) {
+        int digit = n % 10;
+        n = n / 10;
+        next += digit * digit;
+      }
+      return next;
     }
+
+    public boolean isHappy(int n) {
+      int slow = n;
+      int fast = getNext(n);
+      while (fast != 1 && slow != fast) {
+        slow = getNext(slow);
+        fast = getNext(getNext(fast));
+      }
+      return fast == 1;
+
+    }
+  }
 
 //leetcode submit region end(Prohibit modification and deletion)
 
