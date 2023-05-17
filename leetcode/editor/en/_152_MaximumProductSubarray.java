@@ -51,21 +51,21 @@ public class _152_MaximumProductSubarray {
   //leetcode submit region begin(Prohibit modification and deletion)
   class Solution {
     public int maxProduct(int[] nums) {
-      int result = nums[0];
-      int maxToCurPos = nums[0];
-      int maxToCurNeg = nums[0];
+      int max = nums[0];
+      int maxToCur = nums[0];
+      int minToCur = nums[0];
       for (int i = 1; i < nums.length; i++) {
-        if (nums[i] < 0) {
-          int temp = maxToCurPos;
-          maxToCurPos = maxToCurNeg;
-          maxToCurNeg = temp;
+        if (nums[i] == 0) {
+          maxToCur = 0;
+          minToCur = 0;
+        } else {
+          int temp = maxToCur;
+          maxToCur = Math.max(nums[i], Math.max(minToCur * nums[i], maxToCur * nums[i]) );
+          minToCur = Math.min(nums[i], Math.max(temp * nums[i],minToCur * nums[i]) );
         }
-        maxToCurPos = Math.max(nums[i], maxToCurPos * nums[i]);
-        maxToCurNeg = Math.min(nums[i], maxToCurNeg * nums[i]);
-        result = Math.max(result, maxToCurPos);
+        max = Math.max(max, maxToCur);
       }
-      System.out.println(result);
-      return result;
+      return max;
     }
   }
 //leetcode submit region end(Prohibit modification and deletion)

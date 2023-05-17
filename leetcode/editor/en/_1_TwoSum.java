@@ -65,14 +65,11 @@ public class _1_TwoSum {
     public int[] twoSum(int[] nums, int target) {
       Map<Integer, Integer> numMap = new HashMap<>();
       for (int i = 0; i < nums.length; i++) {
-        numMap.put(i, nums[i]);
-      }
-      for (int i = 0; i < nums.length; i++) {
-        for (Map.Entry<Integer, Integer> entry : numMap.entrySet()) {
-          if (entry.getValue() == target - nums[i] && entry.getKey()!= i) {
-            return new int[]{i, entry.getKey()};
-          }
+        int complement = target - nums[i];
+        if(numMap.containsKey(complement)){
+          return new int[]{numMap.get(complement),i};
         }
+        numMap.put(nums[i],i);
       }
       return null;
     }
