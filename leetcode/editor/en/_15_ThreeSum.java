@@ -47,29 +47,31 @@ public class _15_ThreeSum {
   //leetcode submit region begin(Prohibit modification and deletion)
   class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
-      List<List<Integer>> res = new ArrayList<>();
+      List<List<Integer>> result = new ArrayList<>();
       Arrays.sort(nums);
-      for (int i = 0; i + 2 < nums.length; i++) {
-        if (i > 0 && nums[i] == nums[i - 1]) {              // skip same result
-          continue;
-        }
-        int j = i + 1, k = nums.length - 1;
-        int target = -nums[i];
-        while (j < k) {
+      for (int i = 0; i < nums.length - 2; i++) {
+        if(i>0 && nums[i] == nums[i-1]) continue; //remove duplicates **
+        int j = i+1;
+        int k = nums.length-1;
+        int target = - nums[i]; //target should be put outside of while loop
+
+        while(j < k) {
           if (nums[j] + nums[k] == target) {
-            res.add(Arrays.asList(nums[i], nums[j], nums[k]));
+            result.add(Arrays.asList(nums[i], nums[j], nums[k]));
             j++;
             k--;
-            while (j < k && nums[j] == nums[j - 1]) j++;  // skip same result
-            while (j < k && nums[k] == nums[k + 1]) k--;  // skip same result
-          } else if (nums[j] + nums[k] > target) {
+            while (j<k && nums[j] == nums[j+1]) j++; //remove duplicates
+            while (j<k && nums[k] == nums[k-1]) k--; //remove duplicates
+          }
+          if(nums[j] +nums[k] > target) {
             k--;
-          } else {
+          }
+          if(nums[j] +nums[k] <target) {
             j++;
           }
         }
       }
-      return res;
+      return result;
     }
   }
 }

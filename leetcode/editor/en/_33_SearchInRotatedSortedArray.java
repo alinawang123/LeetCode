@@ -36,20 +36,49 @@
 // Related Topics Array Binary Search 
 // 👍 11162 👎 787
 
+import java.util.Arrays;
 import java.util.logging.Logger;
 public class _33_SearchInRotatedSortedArray{
     private static final Logger logger = Logger.getLogger(_33_SearchInRotatedSortedArray .class.toString());
     public static void main(String[] args) {
         long startTimeMillis = System.currentTimeMillis();
         Solution solution = new _33_SearchInRotatedSortedArray().new Solution();
-        // assert solution == ;
+        logger.info("Solution:" + solution.search(new int[]{3,4,5,6,7,8,1,2},7));
         logger.warning(String.valueOf(solution));
         logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int search(int[] nums, int target) {
-        
+        if(nums == null || nums.length == 0) {
+            return -1;
+        }
+        if(nums.length == 1 && nums[0] != target) {
+            return -1;
+        }
+        if(nums[0] == target) return 0;
+        int low = 0;
+        int high = nums.length -1;
+        while (low <= high) {
+            int mid = low + (high - low)/2;
+            if(nums[mid] == target) {
+                return mid;
+            }
+            if(nums[mid] < nums[high]) {
+                if(target <= nums[high] && nums[mid] <= target){
+                    low = mid + 1;
+                } else {
+                    high = mid - 1;
+                }
+            } else {
+                if(target <= nums[mid] && nums[low] <= target){
+                    high = mid -1;
+                } else {
+                    low = mid + 1;
+                }
+            }
+        }
+        return -1;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
