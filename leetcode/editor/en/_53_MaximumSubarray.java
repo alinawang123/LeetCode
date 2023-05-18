@@ -55,13 +55,13 @@ public class _53_MaximumSubarray {
   //leetcode submit region begin(Prohibit modification and deletion)
   class Solution {
     public int maxSubArray(int[] nums) {
-     int maxToCur = nums[0];
-     int maxSum = nums[0];
-      for (int i = 0; i < nums.length; i++) {
-        maxToCur = Math.max(maxToCur+nums[i], nums[i]);//most important part compare max to cur wth the cur value
-        maxSum = Math.max(maxSum, maxToCur);
-      }
-      return maxSum;
+        int max = 0;
+        int maxToCur = 0;
+        for (int i = 0; i < nums.length ; i++) {
+            maxToCur = Math.max(nums[i], maxToCur + nums[i]);
+            max = Math.max(max, maxToCur);
+        }
+        return max;
     }
   }
 //leetcode submit region end(Prohibit modification and deletion)

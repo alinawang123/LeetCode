@@ -55,14 +55,9 @@ public class _152_MaximumProductSubarray {
       int maxToCur = nums[0];
       int minToCur = nums[0];
       for (int i = 1; i < nums.length; i++) {
-        if (nums[i] == 0) {
-          maxToCur = 0;
-          minToCur = 0;
-        } else {
-          int temp = maxToCur;
-          maxToCur = Math.max(nums[i], Math.max(minToCur * nums[i], maxToCur * nums[i]) );
-          minToCur = Math.min(nums[i], Math.max(temp * nums[i],minToCur * nums[i]) );
-        }
+        int temp = maxToCur;
+        maxToCur = Math.max(nums[i], Math.max(minToCur * nums[i], maxToCur* nums[i]));
+        minToCur = Math.min(nums[i], Math.min(minToCur * nums[i], temp* nums[i]));
         max = Math.max(max, maxToCur);
       }
       return max;

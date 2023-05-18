@@ -49,28 +49,7 @@ public class _33_SearchInRotatedSortedArray{
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int search(int[] nums, int target) {
-        if(nums.length==0) return -1;
-        if(nums.length==1 && nums[0] != target) return -1;
-        int low = 0;
-        int high = nums.length-1;
-        while(low < high){
-            int mid = low + (high -low)/2;
-            if(target == nums[mid]) return mid;
-            if (nums[mid] < nums[high]) {
-                if (target <= nums[high] && target > nums[mid]) {
-                    low = mid + 1;
-                } else {
-                    high = mid;
-                }
-            } else {
-                if (target >= nums[low] && target < nums[mid]) {
-                    high = mid;
-                } else {
-                    low = mid +1;
-                }
-            }
-        }
-        return nums[low] ==target? low: -1;
+        
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
