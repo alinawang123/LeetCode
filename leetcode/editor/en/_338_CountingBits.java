@@ -62,9 +62,12 @@ public class _338_CountingBits {
   //leetcode submit region begin(Prohibit modification and deletion)
   class Solution {
     public int[] countBits(int n) {
-      int[] f = new int[n + 1];
-      for (int i=1; i<=n; i++) f[i] = f[i >> 1] + (i & 1);
-      return f;
+      int[] ans = new int[n+1];
+      ans[0] = 0;
+      for (int i = 1; i < n+1; i++) {
+        ans[i] = ans[i>>1] + (i&1);
+      }
+      return ans;
     }
 
 
