@@ -60,8 +60,8 @@ public class _15_ThreeSum {
             result.add(Arrays.asList(nums[i], nums[j], nums[k]));
             j++;
             k--;
-            while (j<k && nums[j] == nums[j+1]) j++; //remove duplicates
-            while (j<k && nums[k] == nums[k-1]) k--; //remove duplicates
+            while (j<k && nums[k] == nums[k+1]) k--; //remove duplicate
+            while (j<k && nums[j] == nums[j-1]) j++; //remove duplicate
           }
           if(nums[j] +nums[k] > target) {
             k--;

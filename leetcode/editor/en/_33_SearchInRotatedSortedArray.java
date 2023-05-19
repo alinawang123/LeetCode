@@ -50,28 +50,25 @@ public class _33_SearchInRotatedSortedArray{
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int search(int[] nums, int target) {
-        if(nums == null || nums.length == 0) {
+        if (nums == null || nums.length ==0) {
             return -1;
         }
-        if(nums.length == 1 && nums[0] != target) {
+        if(nums.length ==1 && nums[0] != target) {
             return -1;
         }
-        if(nums[0] == target) return 0;
         int low = 0;
-        int high = nums.length -1;
-        while (low <= high) {
-            int mid = low + (high - low)/2;
-            if(nums[mid] == target) {
-                return mid;
-            }
+        int high = nums.length-1;
+        while(low <= high) {
+            int mid = low+ (high - low)/2;
+            if(nums[mid] == target) return mid;
             if(nums[mid] < nums[high]) {
-                if(target <= nums[high] && nums[mid] <= target){
-                    low = mid + 1;
-                } else {
-                    high = mid - 1;
+                if(nums[mid]<= target && target <=nums[high]) {
+                    low =mid + 1;
+                } else{
+                    high = mid -1;
                 }
             } else {
-                if(target <= nums[mid] && nums[low] <= target){
+                if(nums[mid]>=target && target >= nums[low]) {
                     high = mid -1;
                 } else {
                     low = mid + 1;

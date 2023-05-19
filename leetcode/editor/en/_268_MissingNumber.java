@@ -67,11 +67,11 @@ public class _268_MissingNumber{
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int missingNumber(int[] nums) {
-       int res = nums.length;
+        int result = nums.length; //must be nums.length because i starts from 0
         for (int i = 0; i < nums.length; i++) {
-            res = res^i^nums[i];
+            result = result^i^nums[i];
         }
-        return res;
+        return result;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

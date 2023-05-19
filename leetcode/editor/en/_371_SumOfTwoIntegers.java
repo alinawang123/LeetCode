@@ -32,7 +32,7 @@ public class _371_SumOfTwoIntegers{
 class Solution {
     public int getSum(int a, int b) {
 
-        return b==0? a:getSum(a^b, (a&b)<<1);
+        return b ==0? a: getSum(a^b, (a&b)<<1);
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
