@@ -60,16 +60,15 @@ public class _377_CombinationSumIv{
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int combinationSum4(int[] nums, int target) {
-        int[] dp = new int[target+1];
-        dp[0] = 1;
+       int[] dp = new int[target+1];
+       dp[0] = 1;
         for (int i = 1; i <= target; i++) {
             for (int j = 0; j < nums.length; j++) {
-                if(nums[j] <= i) {
-                    dp[i] += dp[i - nums[j]];
+                if(nums[j]<=i){ //pleaase do not forget about checking if nums[j] <=i
+                    dp[i] += dp[i-nums[j]];
                 }
             }
         }
-        //System.out.println(dp[target]);
         return dp[target];
     }
 }
