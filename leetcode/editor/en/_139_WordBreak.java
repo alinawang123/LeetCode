@@ -43,6 +43,7 @@
 // Related Topics Hash Table String Dynamic Programming Trie Memoization 
 // 👍 8747 👎 402
 
+import java.util.HashSet;
 import java.util.List;
 import java.util.logging.Logger;
 public class _139_WordBreak{
@@ -57,20 +58,18 @@ public class _139_WordBreak{
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean wordBreak(String s, List<String> wordDict) {
-        boolean[] dp = new boolean[s.length() + 1];
-        dp[0]= true;
-        for (int i = 0; i <= s.length(); i++) {
-            for (int j = 0; j < i; j++) {
-                if(dp[j] && wordDict.contains(s.substring(j,i))){
-                    dp[i]= true;
+        HashSet<String> dic = new HashSet<>(wordDict);
+        boolean[] dp = new boolean[s.length()+1];
+        dp[0] = true;
+        for (int i = 1; i <= s.length(); i++) {
+            for (int j = i; j >=0 ; j--) {
+                if(dp[j] && dic.contains(s.substring(j,i))){
+                    dp[i] = true;
                     break;
                 }
-
             }
         }
         return dp[s.length()];
-
-
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
