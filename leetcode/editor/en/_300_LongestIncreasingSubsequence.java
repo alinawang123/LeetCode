@@ -58,23 +58,19 @@ public class _300_LongestIncreasingSubsequence{
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int lengthOfLIS(int[] nums) {
-        // kick your ass `_`
-        int[] tails = new int[nums.length];
-        int size = 0;
-        for (int x : nums) {
-            int i = 0, j = size;
-            while (i != j) {
-                int m = (i + j) / 2;
-                if (tails[m] < x)
-                    i = m + 1;
-                else
-                    j = m;
+        if(nums.length == 1) return 1;
+        int[] dp = new int[nums.length];
+        int res = 1;
+        Arrays.fill(dp, 1);
+        for (int i = 1; i < nums.length ; i++) {
+            for (int j = i; j >= 0; j--) {
+                if(nums[i] > nums[j]) {
+                    dp[i] = Math.max(dp[i], dp[j] + 1);
+                    res = Math.max(res, dp[i]);
+                }
             }
-            tails[i] = x;
-            if (i == size) ++size;
         }
-        System.out.println(size);
-        return size;
+        return res;
 
     }
 }
