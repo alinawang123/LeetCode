@@ -43,6 +43,8 @@
 // Related Topics Hash Table String Dynamic Programming Trie Memoization 
 // 👍 8747 👎 402
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.logging.Logger;
@@ -51,7 +53,9 @@ public class _139_WordBreak{
     public static void main(String[] args) {
         long startTimeMillis = System.currentTimeMillis();
         Solution solution = new _139_WordBreak().new Solution();
-        // assert solution == ;
+        String s = "leetcode";
+        List<String> wordDict = Arrays.asList("leet", "code");
+        solution.wordBreak(s, wordDict);
         logger.warning(String.valueOf(solution));
         logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
     }
