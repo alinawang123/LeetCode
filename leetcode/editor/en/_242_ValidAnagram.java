@@ -43,17 +43,15 @@ public class _242_ValidAnagram {
   //leetcode submit region begin(Prohibit modification and deletion)
   class Solution {
     public boolean isAnagram(String s, String t) {
-      int[] charactorMap = new int[26];
+      int[] map = new int[26];
       for (int i = 0; i < s.length(); i++) {
-        charactorMap[s.charAt(i) - 'a']++;
+        map[s.charAt(i)-'a']++;
       }
       for (int i = 0; i < t.length(); i++) {
-        charactorMap[t.charAt(i) - 'a']--;
+        map[t.charAt(i)- 'a']--;
       }
-      for (int i : charactorMap) {
-        if (i != 0) {
-          return false;
-        }
+      for (int i = 0; i < map.length; i++) {
+        if(map[i] != 0) return false;
       }
       return true;
     }

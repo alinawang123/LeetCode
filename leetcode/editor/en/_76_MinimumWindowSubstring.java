@@ -70,31 +70,31 @@ public class _76_MinimumWindowSubstring {
   //leetcode submit region begin(Prohibit modification and deletion)
   class Solution {
     public String minWindow(String s, String t) {
-      HashMap<Character, Integer> map = new HashMap<>();
-      for(char c : t.toCharArray()){
-        if(map.containsKey(c)) {
-          map.put(c, map.get(c)+1);
-        } else {
-          map.put(c, 1);
-        }
-      }
-      int start = 0;
-      int end = 0;
-      String res = "";
-      int count =0;
-      for(end = 0; end < s.length(); end ++) {
+     HashMap<Character, Integer> map = new HashMap<>();
+     for( char c: t.toCharArray()) {
+       if(map.containsKey(c)) {
+         map.put(c, map.get(c)+1);
+       } else {
+         map.put(c, 1);
+       }
+     }
+     int start = 0;
+     String res = "";
+     int count = 0;
+
+      for (int end = 0; end < s.length(); end++) {
         if(map.containsKey(s.charAt(end))) {
           map.put(s.charAt(end), map.get(s.charAt(end))-1);
-          if(map.containsKey(s.charAt(end)) && map.get(s.charAt(end)) >= 0) {
+          if(map.get(s.charAt(end)) >= 0) {
             count ++;
           }
           while(count == t.length()) {
-            if(res.equals("") || end - start +1 < res.length()) {
-              res = s.substring(start, end+1);
+            if(res.equals("") || end -start +1 <res.length() ) {
+              res = s.substring(start, end +1);
             }
             if(map.containsKey(s.charAt(start))) {
               map.put(s.charAt(start), map.get(s.charAt(start))+1);
-              if(map.get(s.charAt(start))>0) {
+              if(map.get(s.charAt(start))> 0) {
                 count --;
               }
             }
@@ -102,7 +102,6 @@ public class _76_MinimumWindowSubstring {
           }
         }
       }
-
       return res;
     }
   }

@@ -45,16 +45,21 @@ public class _49_GroupAnagrams{
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
-        if (strs == null || strs.length == 0) return new ArrayList<>();
-        Map<String, List<String>> map = new HashMap<>();
-        for (String s : strs) {
-            char[] ca = new char[26];
-            for (char c : s.toCharArray()) ca[c - 'a']++;
-            String keyStr = String.valueOf(ca);
-            System.out.println(keyStr);
-            if (!map.containsKey(keyStr)) map.put(keyStr, new ArrayList<>());
-            map.get(keyStr).add(s);
+        HashMap<String, List<String>> map = new HashMap<>();
+        for(String s: strs) {
+            int[] charactor = new int[26];
+            for(char c: s.toCharArray()) {
+                charactor[c-'a']++;
+            }
+            String caString = Arrays.toString(charactor);
+            if(!map.containsKey(caString)) {
+                map.put(caString, new ArrayList<>());
+            }
+
+            map.get(caString).add(s);
+
         }
+
         return new ArrayList<>(map.values());
     }
 }
