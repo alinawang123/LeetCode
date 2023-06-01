@@ -52,20 +52,20 @@ public class _424_LongestRepeatingCharacterReplacement {
   //leetcode submit region begin(Prohibit modification and deletion)
   class Solution {
     public int characterReplacement(String s, int k) { //sliding window
+      int right;
+      int left = 0;
+      int res = 0;
       int maxFrequency = 0;
-      int maxLength = 0;
-      int start = 0;
-      int end;
-      int count[] = new int[26];
-      for (end = 0; end < s.length(); end++) {
-        maxFrequency = Math.max(maxFrequency, ++count[s.charAt(end) - 'A']);
-        while (end - start - maxFrequency + 1 - k > 0) {
-          count[s.charAt(start) -'A']--;
-          start++;
+      int[] count = new int[26];
+      for (right = 0; right < s.length(); right++) {
+        maxFrequency = Math.max(maxFrequency, ++count[s.charAt(right) - 'A']);
+        while (right - left + 1 - maxFrequency > k) { //while loop
+          count[s.charAt(left) -'A']--;
+          left++;
         }
-        maxLength = Math.max(maxLength, end - start + 1);
+        res = Math.max(res, right-left +1);
       }
-      return maxLength;
+      return res;
     }
   }
 //leetcode submit region end(Prohibit modification and deletion)

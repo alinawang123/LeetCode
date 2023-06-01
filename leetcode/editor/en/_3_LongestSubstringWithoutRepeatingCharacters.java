@@ -46,13 +46,14 @@
 // 👍 19533 👎 891
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.logging.Logger;
 public class _3_LongestSubstringWithoutRepeatingCharacters{
     private static final Logger logger = Logger.getLogger(_3_LongestSubstringWithoutRepeatingCharacters .class.toString());
     public static void main(String[] args) {
         long startTimeMillis = System.currentTimeMillis();
         Solution solution = new _3_LongestSubstringWithoutRepeatingCharacters().new Solution();
-        String s = "abcabcbb";
+        String s = "pwwkew";
         System.out.println(solution.lengthOfLongestSubstring(s));
         logger.warning(String.valueOf(solution));
         logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
@@ -60,17 +61,19 @@ public class _3_LongestSubstringWithoutRepeatingCharacters{
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int lengthOfLongestSubstring(String s) {
-        if(s.length() == 0) return 0;
-
-        HashMap<Character, Integer> map = new HashMap<>();
-        int res=0;
-
-        for (int left = 0, right =0; left < s.length(); left++) {
-            if(map.containsKey(s.charAt(left))){
-                right = Math.max(map.get(s.charAt(left)) +1, right);
+        int res = 0;
+        int left = 0;
+        int right = 0;
+        HashSet<Character> set = new HashSet<>();
+        while( right < s.length()) {
+            if(!set.contains(s.charAt(right))){
+                set.add(s.charAt(right));
+                right++;
+                res = Math.max(res, set.size());
+            } else {
+                set.remove(s.charAt(left));
+                left++;
             }
-            map.put(s.charAt(left), left);
-            res= Math.max(res, left- right +1);
         }
         return res;
     }

@@ -92,25 +92,21 @@ public class _91_DecodeWays {
   //leetcode submit region begin(Prohibit modification and deletion)
   class Solution {
     public int numDecodings(String s) {
-      if (s == null || s.length() == 0) {
-        return 0;
-      }
-      int n = s.length();
-      int[] dp = new int[n + 1];
-      if (s.charAt(0) == '0') return 0;
+      int[] dp = new int[s.length()+1];
+      if(s.charAt(0) == '0') return 0;
       dp[0] = 1;
       dp[1] = 1;
-      for (int i = 2; i <= n; i++) {
-        String first = s.substring(i - 1, i);
-        String second = s.substring(i - 2, i);
-        if (1 <= Integer.parseInt(first) && Integer.parseInt(first) <= 9) {
-          dp[i] += dp[i - 1];
+      for (int i = 2; i <= s.length(); i++) {
+        int first = Integer.parseInt(s.substring(i-1,i));
+        int second = Integer.parseInt(s.substring(i-2,i));
+        if(1<=first && first <= 9) {
+          dp[i] = dp[i] + dp[i-1];
         }
-        if (10 <= Integer.parseInt(second) && Integer.parseInt(second) <= 26) {
-          dp[i] += dp[i - 2];
+        if(10 <= second && second <= 26) {
+          dp[i] = dp[i] + dp[i-2];
         }
       }
-      return dp[n];
+      return dp[s.length()];
     }
   }
 //leetcode submit region end(Prohibit modification and deletion)
