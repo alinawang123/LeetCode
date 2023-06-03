@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f8719c4c-6879-41ae-bf3a-dbeada41b572" name="Default Changelist" comment="Easy problems">
-      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_141_LinkedListCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_141_LinkedListCycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_19_RemoveNthNodeFromEndOfList.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_19_RemoveNthNodeFromEndOfList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_206_ReverseLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_206_ReverseLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_21_MergeTwoSortedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_21_MergeTwoSortedLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_56_MergeIntervals.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_56_MergeIntervals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_57_InsertInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_57_InsertInterval.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/_20_ValidParentheses$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/_20_ValidParentheses$Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/_242_ValidAnagram$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/_242_ValidAnagram$Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/_49_GroupAnagrams$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/_49_GroupAnagrams$Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/_56_MergeIntervals$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/_56_MergeIntervals$Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/_56_MergeIntervals.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/_56_MergeIntervals.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/_57_InsertInterval$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/_57_InsertInterval$Solution.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +34,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -28,6 +47,14 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="309c6edb-e986-4c54-a543-a1bbb41c22a0" />
+        <option name="url" value="https://github.com/alinawang123/LeetCode.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="ProjectId" id="1rdAcI3VCdmUR94zk29UINiaW3W" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -35,21 +62,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.17" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "leetcode.id",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/leetcode" />
     </key>
   </component>
-  <component name="RunManager" selected="Application._141_LinkedListCycle">
+  <component name="RunManager" selected="Application._13_RomanToInteger">
     <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BubbleSort" />
       <module name="LeetCode" />
@@ -103,6 +131,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619295670711</updated>
+      <workItem from="1685743762610" duration="681000" />
     </task>
     <task id="LOCAL-00001" summary="Two sum">
       <created>1619395069774</created>
@@ -120,6 +149,9 @@
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -143,7 +175,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Two sum" />
@@ -237,24 +268,19 @@
           <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/leetcode/editor/en/_20_ValidParentheses.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="88" />
+          <url>file://$PROJECT_DIR$/leetcode/editor/en/_56_MergeIntervals.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="122" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/leetcode/editor/en/_20_ValidParentheses.java</url>
-          <line>76</line>
-          <option name="timeStamp" value="89" />
+          <url>file://$PROJECT_DIR$/leetcode/editor/en/_56_MergeIntervals.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="124" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/leetcode/editor/en/_20_ValidParentheses.java</url>
-          <line>78</line>
-          <option name="timeStamp" value="90" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/leetcode/editor/en/_20_ValidParentheses.java</url>
-          <line>80</line>
-          <option name="timeStamp" value="91" />
+          <url>file://$PROJECT_DIR$/leetcode/editor/en/_56_MergeIntervals.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="125" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
@@ -272,8 +298,14 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="set" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LeetCode$_22_GenerateParentheses.ic" NAME="_22_GenerateParentheses Coverage Results" MODIFIED="1638219026273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/LeetCode$_33_SearchInRotatedSortedArray.ic" NAME="_33_SearchInRotatedSortedArray Coverage Results" MODIFIED="1684431807894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
