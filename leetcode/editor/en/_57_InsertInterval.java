@@ -80,23 +80,21 @@ class Solution {
         List<int[]> output = new ArrayList<>();
         int newStart = newInterval[0];
         int newEnd = newInterval[1];
-
-        int i= 0;
-        while(i<intervals.length && intervals[i][1] < newStart) {
-            output.add(intervals[i++]);
+        int i = 0;
+        while (i<intervals.length && intervals[i][1] < newStart) {
+            output.add(intervals[i]);
+            i++;
         }
-
-        while(i<intervals.length && intervals[i][1] >= newStart) {
-            newStart = Math.min(newStart, intervals[i][0]);
+        while (i<intervals.length && intervals[i][0] <= newEnd) {
+            newStart = Math.min (newStart, intervals[i][0]);
             newEnd = Math.max(newEnd, intervals[i][1]);
             i++;
         }
-        output.add(new int[]{newStart, newEnd});
-
-        while(i<intervals.length && intervals[i][0] > newEnd) {
-            output.add(intervals[i++]);
+        output.add(new int[] {newStart, newEnd});
+        while (i<intervals.length && intervals[i][0] > newEnd) {
+            output.add(intervals[i]);
+            i++;
         }
-
         return output.toArray(new int[output.size()][2]);
     }
 }

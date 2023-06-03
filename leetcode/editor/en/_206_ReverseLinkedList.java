@@ -37,6 +37,7 @@
 // Related Topics Linked List Recursion 
 // 👍 8540 👎 152
 
+import java.util.List;
 import java.util.logging.Logger;
 
 public class _206_ReverseLinkedList {
@@ -75,17 +76,16 @@ public class _206_ReverseLinkedList {
     }
 
     public ListNode reverseList(ListNode head) {
-      if (head == null) return head;
-      ListNode next = head.next;
-      head.next = null;
-
-      while (next != null) {
-        ListNode temp = next.next;
-        next.next = head;
-        head = next;
-        next = temp;
+      ListNode next = null;
+      ListNode pre = null;
+      ListNode cur = head;
+      while(cur!=null) {
+        next = cur.next;
+        cur.next = pre;
+        pre = cur;
+        cur = next;
       }
-      return head;
+      return pre;
     }
   }
 //leetcode submit region end(Prohibit modification and deletion)

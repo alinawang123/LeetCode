@@ -30,6 +30,7 @@
 // Related Topics Array Sorting 
 // 👍 10556 👎 455
 
+import java.security.cert.CertPath;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -40,28 +41,27 @@ public class _56_MergeIntervals{
     public static void main(String[] args) {
         long startTimeMillis = System.currentTimeMillis();
         Solution solution = new _56_MergeIntervals().new Solution();
-        // assert solution == ;
+        int[][] intervals = {{1,3},{2,6},{8,10},{15,18}};
+        System.out.println(solution.merge(intervals));
         logger.warning(String.valueOf(solution));
         logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[][] merge(int[][] intervals) {
-        if(intervals==null|| intervals.length<=1) return intervals;
-        Arrays.sort(intervals, Comparator.comparingInt(a -> a[0]));// Array and arraylist not
-        // familiar
-        List<int[]> output = new ArrayList<>(); //wasn't aware of this can be done.
-        int[] temp= intervals[0];
-        output.add(temp);
-        for (int[] interval: intervals) {
-            if (interval[0] <= temp[1]) {
-                temp[1] = Math.max(temp[1], interval[1]);
-            } else {
-                temp = interval;
-                output.add(temp);
+            Arrays.sort(intervals, Comparator.comparingInt(a-> a[0]));
+            List<int[]> output = new ArrayList<>();
+            int[] temp = intervals[0];
+            output.add(temp);
+            for(int[] interval :intervals) {
+                if(interval[0] > temp[1]){
+                    temp = interval;
+                    output.add(interval);
+                } else {
+                    temp[1] = Math.max(interval[1], temp[1]);
+                }
             }
-        }
-        return output.toArray(new int[output.size()][]);
+            return output.toArray(new int[output.size()][2]);
         }
     }
 }
