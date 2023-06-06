@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8719c4c-6879-41ae-bf3a-dbeada41b572" name="Default Changelist" comment="Easy problems">
+      <change afterPath="$PROJECT_DIR$/leetcode/editor/en/_252_MeetingRoom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/editor/en/_253_MeetingRoom2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_141_LinkedListCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_141_LinkedListCycle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_19_RemoveNthNodeFromEndOfList.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_19_RemoveNthNodeFromEndOfList.java" afterDir="false" />
@@ -12,12 +15,6 @@
       <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_21_MergeTwoSortedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_21_MergeTwoSortedLists.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_56_MergeIntervals.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_56_MergeIntervals.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_57_InsertInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_57_InsertInterval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/_20_ValidParentheses$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/_20_ValidParentheses$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/_242_ValidAnagram$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/_242_ValidAnagram$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/_49_GroupAnagrams$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/_49_GroupAnagrams$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/_56_MergeIntervals$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/_56_MergeIntervals$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/_56_MergeIntervals.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/_56_MergeIntervals.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/_57_InsertInterval$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/_57_InsertInterval$Solution.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +52,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1rdAcI3VCdmUR94zk29UINiaW3W" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -62,19 +62,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "leetcode.id",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;leetcode.id&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/leetcode" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Application._13_RomanToInteger">
@@ -131,7 +134,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619295670711</updated>
-      <workItem from="1685743762610" duration="681000" />
+      <workItem from="1685743762610" duration="1298000" />
+      <workItem from="1686071616347" duration="7993000" />
     </task>
     <task id="LOCAL-00001" summary="Two sum">
       <created>1619395069774</created>
@@ -266,21 +270,6 @@
           <url>file://$PROJECT_DIR$/leetcode/editor/en/_260_SingleNumberIii.java</url>
           <line>86</line>
           <option name="timeStamp" value="82" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/leetcode/editor/en/_56_MergeIntervals.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="122" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/leetcode/editor/en/_56_MergeIntervals.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="124" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/leetcode/editor/en/_56_MergeIntervals.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="125" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />

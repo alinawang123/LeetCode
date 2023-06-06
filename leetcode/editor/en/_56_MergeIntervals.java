@@ -49,16 +49,17 @@ public class _56_MergeIntervals{
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[][] merge(int[][] intervals) {
-            Arrays.sort(intervals, Comparator.comparingInt(a-> a[0]));
             List<int[]> output = new ArrayList<>();
+            Arrays.sort(intervals, Comparator.comparingInt(a-> a[0]));
             int[] temp = intervals[0];
             output.add(temp);
-            for(int[] interval :intervals) {
-                if(interval[0] > temp[1]){
+            for( int[] interval : intervals) {
+                if(interval[0] > temp[1]) {
                     temp = interval;
-                    output.add(interval);
+                    output.add(temp);
                 } else {
-                    temp[1] = Math.max(interval[1], temp[1]);
+                    temp[0] = Math.min(temp[0], interval[0]);
+                    temp[1] = Math.max(temp[1], interval[1]);
                 }
             }
             return output.toArray(new int[output.size()][2]);

@@ -83,7 +83,7 @@ public class _206_ReverseLinkedList {
         next = cur.next;
         cur.next = pre;
         pre = cur;
-        cur = next;
+        cur= next;
       }
       return pre;
     }
