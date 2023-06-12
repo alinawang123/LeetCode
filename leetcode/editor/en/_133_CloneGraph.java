@@ -126,17 +126,16 @@ public class _133_CloneGraph {
     }
 
     private Node clone(Node node) {
-      if (node == null) return null;
-
-      if (map.containsKey(node.val)) {
-        return map.get(node.val);
-      }
-      Node newNode = new Node(node.val);
-      map.put(newNode.val, newNode);
-      for (Node neighbor : node.neighbors) {
-        newNode.neighbors.add(clone(neighbor));
-      }
-      return newNode;
+     if(node == null) return null;
+     if(map.containsKey(node.val)) {
+       return map.get(node.val);
+     }
+     Node newNode = new Node(node.val);
+     map.put(node.val, newNode);
+     for(Node neighbor: node.neighbors) {
+       newNode.neighbors.add(clone(neighbor));
+     }
+     return newNode;
     }
   }
 //leetcode submit region end(Prohibit modification and deletion)

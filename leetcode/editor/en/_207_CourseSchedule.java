@@ -44,10 +44,7 @@
 // 
 // 👍 7754 👎 310
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 import java.util.logging.Logger;
 
 public class _207_CourseSchedule {
@@ -63,6 +60,37 @@ public class _207_CourseSchedule {
 
   //leetcode submit region begin(Prohibit modification and deletion)
   class Solution {
+
+      public boolean canFinish(int numCourses, int[][] prerequisites) {
+          List<List<Integer>> adjacency = new ArrayList<>();
+          for(int i=0;i<numCourses;i++)
+              adjacency.add(new ArrayList<>());
+          int[] flags = new int[numCourses];
+          for (int[] prerequisite : prerequisites) {
+              adjacency.get(prerequisite[1]).add(prerequisite[0]);
+          }
+          for(int i=0; i<numCourses; i++){
+              if(!dfs(adjacency,flags,i))
+                  return false;
+          }
+          return true;
+      }
+
+      private boolean dfs(List<List<Integer>> adjacency, int[] flags, int i) {
+          if (flags[i] == 1) {
+              return false;
+          } else if(flags[i] == -1){
+            return true;
+          }
+          flags[i] = 1;
+          for (Integer j : adjacency.get(i)) {
+              if (!dfs(adjacency, flags, j)){
+                  return false;
+              }
+          }
+          flags[i] = -1;
+          return true;
+      }
 //    public boolean canFinish(int numCourses, int[][] prerequisites) {
 //        int[][] table = new int[numCourses][numCourses];//BFS method
 //        int[] indegree = new int[numCourses];

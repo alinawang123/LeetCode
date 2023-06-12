@@ -63,64 +63,103 @@ public class _417_PacificAtlanticWaterFlow {
 
   //leetcode submit region begin(Prohibit modification and deletion)
   class Solution {
-    private final int[][] DIRECTIONS = new int[][]{{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
 
     public List<List<Integer>> pacificAtlantic(int[][] heights) {
       if (heights.length == 0 || heights[0].length == 0) {
         return new ArrayList<>();
       }
-      int n = heights.length;
-      int m = heights[0].length;
+      int m = heights.length;
+      int n = heights[0].length;
+      boolean[][] canReachP = new boolean[m][n];
+      boolean[][] canReachA = new boolean[m][n];
 
-      Queue<int[]> queuePacific = new LinkedList<>();
-      Queue<int[]> queueAtlantic = new LinkedList<>();
-
-      for (int i = 0; i < n; i++) {
-        queuePacific.offer(new int[]{i, 0});
-        queueAtlantic.add(new int[]{i, m - 1});
-      }
       for (int i = 0; i < m; i++) {
-        queuePacific.offer(new int[]{0, i});
-        queueAtlantic.add(new int[]{n - 1, i});
+        dfs(heights, canReachP, i, 0);
+        dfs(heights, canReachA, i, n - 1);
       }
-      boolean[][] pacific = bfs(queuePacific, n, m, heights);
-      boolean[][] atlantic = bfs(queueAtlantic, n, m, heights);
-
-      List<List<Integer>> result = new ArrayList<>();
-
       for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
-          if (pacific[i][j] && atlantic[i][j]) {
-            result.add(Arrays.asList(i, j));
+        dfs(heights, canReachP, 0, i);
+        dfs(heights, canReachA, m-1, i);
+      }
+      List<List<Integer>> res = new ArrayList<>();
+      for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+          if (canReachP[i][j] && canReachA[i][j]) {
+            res.add(Arrays.asList(i, j));
           }
         }
       }
-      return result;
+      return res;
     }
 
-    private boolean[][] bfs(Queue<int[]> queue, int n, int m, int[][] heights) {
-      boolean[][] reachable = new boolean[n][m];
-      while (!queue.isEmpty()) {
-        int[] cell = queue.poll();
-        reachable[cell[0]][cell[1]] = true;
-        for (int[] dir : DIRECTIONS) {
-          int newRow = cell[0] + dir[0];
-          int newCol = cell[1] + dir[1];
-          if (newRow < 0 || newRow >= n || newCol < 0 || newCol >= m) {
-            continue;
-          }
-          if (reachable[newRow][newCol]) {
-            continue;
-          }
-          if (heights[newRow][newCol] < heights[cell[0]][cell[1]]) {
-            continue;
-          }
-          queue.offer(new int[]{newRow, newCol});
-        }
-      }
-      return reachable;
+    private void dfs(int[][] heights, boolean[][] canReach, int row, int column){
+      if(canReach[row][column]) return;
+      canReach[row][column]=true;
+      if(row-1>=0&&heights[row-1][column]>=heights[row][column]){dfs(heights,canReach,row-1,column);}
+      if(column-1>=0&&heights[row][column-1]>=heights[row][column]){dfs(heights,canReach,row,column-1);}
+      if(row+1<heights.length&&heights[row+1][column]>=heights[row][column]){dfs(heights,canReach,row+1,column);}
+      if(column+1<heights[0].length&&heights[row][column+1]>=heights[row][column]){dfs(heights,canReach, row,column+1);}
     }
+  }
+
+
+//    private final int[][] DIRECTIONS = new int[][]{{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
+//
+//    public List<List<Integer>> pacificAtlantic(int[][] heights) {
+//      if (heights.length == 0 || heights[0].length == 0) {
+//        return new ArrayList<>();
+//      }
+//      int n = heights.length;
+//      int m = heights[0].length;
+//
+//      Queue<int[]> queuePacific = new LinkedList<>();
+//      Queue<int[]> queueAtlantic = new LinkedList<>();
+//
+//      for (int i = 0; i < n; i++) {
+//        queuePacific.offer(new int[]{i, 0});
+//        queueAtlantic.add(new int[]{i, m - 1});
+//      }
+//      for (int i = 0; i < m; i++) {
+//        queuePacific.offer(new int[]{0, i});
+//        queueAtlantic.add(new int[]{n - 1, i});
+//      }
+//      boolean[][] pacific = bfs(queuePacific, n, m, heights);
+//      boolean[][] atlantic = bfs(queueAtlantic, n, m, heights);
+//
+//      List<List<Integer>> result = new ArrayList<>();
+//
+//      for (int i = 0; i < n; i++) {
+//        for (int j = 0; j < m; j++) {
+//          if (pacific[i][j] && atlantic[i][j]) {
+//            result.add(Arrays.asList(i, j));
+//          }
+//        }
+//      }
+//      return result;
+//    }
+//
+//    private boolean[][] bfs(Queue<int[]> queue, int n, int m, int[][] heights) {
+//      boolean[][] reachable = new boolean[n][m];
+//      while (!queue.isEmpty()) {
+//        int[] cell = queue.poll();
+//        reachable[cell[0]][cell[1]] = true;
+//        for (int[] dir : DIRECTIONS) {
+//          int newRow = cell[0] + dir[0];
+//          int newCol = cell[1] + dir[1];
+//          if (newRow < 0 || newRow >= n || newCol < 0 || newCol >= m) {
+//            continue;
+//          }
+//          if (reachable[newRow][newCol]) {
+//            continue;
+//          }
+//          if (heights[newRow][newCol] < heights[cell[0]][cell[1]]) {
+//            continue;
+//          }
+//          queue.offer(new int[]{newRow, newCol});
+//        }
+//      }
+//      return reachable;
+//    }
 //leetcode submit region end(Prohibit modification and deletion)
 
-  }
 }
