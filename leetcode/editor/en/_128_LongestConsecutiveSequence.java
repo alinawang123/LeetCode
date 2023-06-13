@@ -48,30 +48,28 @@ public class _128_LongestConsecutiveSequence {
   class Solution {
     public int longestConsecutive(int[] nums) {
       if (nums.length == 0) return 0;
-
-      HashSet<Integer> set = new HashSet<>();
+      HashSet<Integer> set = new HashSet();
       for (int i = 0; i < nums.length; i++) {
         set.add(nums[i]);
       }
-
-      int sequenceLength = 0;
       int longestSequence = 0;
+      int sequenceLength = 0;
       int curNum = 0;
 
-      for (int num : nums) {
-        if (!set.contains(num - 1)) {
-          curNum = num;
-          sequenceLength = 1;
-
-          while (set.contains(curNum + 1)) { //looking for the beginning of the sequence
-            curNum++;
-            sequenceLength++;
-          }
-        }
-        longestSequence = Math.max(longestSequence, sequenceLength);
-      }
+     for(int num: nums) {
+       if (!set.contains(num - 1)) { //looking for the starting point of the sequence
+         curNum = num;
+         sequenceLength = 1;
+         while (set.contains(curNum + 1)) {
+           curNum++;
+           sequenceLength++;
+         }
+         longestSequence = Math.max(longestSequence, sequenceLength);
+       }
+     }
       return longestSequence;
     }
+
   }
 //leetcode submit region end(Prohibit modification and deletion)
 

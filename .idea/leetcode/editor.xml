@@ -25,6 +25,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="/var/folders/jf/zzmhghjx2wq6gyydx4d4thgc0000gn/T/leetcode/editor/en/[200]Number of Islands.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/jf/zzmhghjx2wq6gyydx4d4thgc0000gn/T/leetcode/editor/en/doc/content/[200]Number of Islands.md" />
+              <option name="frontendQuestionId" value="leetcode.com200" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="/var/folders/jf/zzmhghjx2wq6gyydx4d4thgc0000gn/T/leetcode/editor/en/[200]Number of Islands.java" />
+              <option name="titleSlug" value="number-of-islands" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="/var/folders/jf/zzmhghjx2wq6gyydx4d4thgc0000gn/T/leetcode/editor/en/[2431]Maximize Total Tastiness of Purchased Fruits.java">
           <value>
             <LeetcodeEditor>
@@ -44,6 +55,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="/var/folders/jf/zzmhghjx2wq6gyydx4d4thgc0000gn/T/leetcode/editor/en/[435]Non-overlapping Intervals.java" />
               <option name="titleSlug" value="non-overlapping-intervals" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/jf/zzmhghjx2wq6gyydx4d4thgc0000gn/T/leetcode/editor/en/[572]Subtree of Another Tree.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/jf/zzmhghjx2wq6gyydx4d4thgc0000gn/T/leetcode/editor/en/doc/content/[572]Subtree of Another Tree.md" />
+              <option name="frontendQuestionId" value="leetcode.com572" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="/var/folders/jf/zzmhghjx2wq6gyydx4d4thgc0000gn/T/leetcode/editor/en/[572]Subtree of Another Tree.java" />
+              <option name="titleSlug" value="subtree-of-another-tree" />
             </LeetcodeEditor>
           </value>
         </entry>

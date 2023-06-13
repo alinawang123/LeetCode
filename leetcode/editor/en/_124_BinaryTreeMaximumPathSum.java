@@ -74,16 +74,16 @@ public class _124_BinaryTreeMaximumPathSum {
     private int ans = Integer.MIN_VALUE;
 
     public int maxPathSum(TreeNode root) {
-      helper(root);
-      return ans;
+     helper(root);
+     return ans;
     }
-
-    private int helper(TreeNode root) {
-      if (root == null) return 0;
-      int leftMax = Math.max(0, helper(root.left));
+    private int helper (TreeNode root){
+      if(root == null) return 0;
+      int leftMax= Math.max(0, helper(root.left));
       int rightMax = Math.max(0, helper(root.right));
-      ans = Math.max(ans, leftMax + rightMax + root.val);
-      return Math.max(leftMax + root.val, rightMax + root.val);
+      ans = Math.max(ans, leftMax+rightMax+root.val);
+      return Math.max(leftMax+root.val, rightMax+root.val);
+
     }
   }
 //leetcode submit region end(Prohibit modification and deletion)

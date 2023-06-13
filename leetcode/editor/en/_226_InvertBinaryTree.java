@@ -68,11 +68,11 @@ public class _226_InvertBinaryTree {
 
   class Solution {
     public TreeNode invertTree(TreeNode root) {
-      if (root == null) return null;
+      if(root == null) return null;
       TreeNode tempLeft = invertTree(root.left);
       TreeNode tempRight = invertTree(root.right);
+      root.left = tempRight;
       root.right = tempLeft;
-      root.left =tempRight;
       return root;
     }
   }
