@@ -55,8 +55,8 @@ public class _79_WordSearch {
   public static void main(String[] args) {
     long startTimeMillis = System.currentTimeMillis();
     Solution solution = new _79_WordSearch().new Solution();
-    char[][] board = new char[][]{{'a', 'a', 'a', 'a'}, {'a', 'a', 'a', 'a'}, {'a', 'a', 'a', 'a'}};
-    String word = "aaaaaaaaaaaaa";
+    char[][] board = new char[][]{{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}};
+    String word = "ABCCED";
     solution.exist(board, word);
     logger.warning(String.valueOf(solution));
     logger.info("time cost: [" + (System.currentTimeMillis() - startTimeMillis) + "] ms");
@@ -64,40 +64,36 @@ public class _79_WordSearch {
 
   //leetcode submit region begin(Prohibit modification and deletion)
   class Solution {
-    private boolean[][] visited;
 
     public boolean exist(char[][] board, String word) {
-      if (board == null || board.length == 0 || board[0].length == 0) {
-        return false;
-      }
-      visited = new boolean[board.length][board[0].length];
-      for (int i = 0; i < board.length; i++) {
-        for (int j = 0; j < board[0].length; j++) {
-          if ((board[i][j] == word.charAt(0)) && backtrack(board, word, 0, i, j, visited)) {
+      if(board == null || board.length ==0 || board[0].length == 0 ||word == null) return false;
+      int row = board.length;
+      int col = board[0].length;
+      for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+          if(board[i][j] == word.charAt(0) && backtrack(board, word, 0, i, j)) {
             return true;
           }
         }
       }
       return false;
-
     }
 
-    public boolean backtrack(char[][] board, String word, int start, int row, int col,
-                             boolean[][] visited) {
-      if (start == word.length()) {
-        return true;
+    public boolean backtrack(char[][] board, String word, int start, int row, int col) {
+      if(start == word.length()) return true;
+      if(row<0|| row>=board.length|| col<0 || col>=board[0].length) return false;
+      char c = board[row][col];
+      if(c == '*') return false;
+      if(board[row][col] == word.charAt(start)) {
+        board[row][col] = '*';
+        if(backtrack(board, word, start+1, row-1, col)||
+                backtrack(board, word, start+1, row+1, col)||
+                backtrack(board, word, start+1, row, col-1)||
+                backtrack(board, word, start+1, row, col+1)) {
+          return true;
+        }
+        board[row][col] = c;
       }
-      if ((row < 0 || col < 0 || row >= board.length || col >= board[0].length) || board[row][col] != word.charAt(start) || visited[row][col]) {
-        return false;
-      }
-      visited[row][col] = true;
-      if (backtrack(board, word, start + 1, row - 1, col, visited)
-          || backtrack(board, word, start + 1, row + 1, col, visited)
-          || backtrack(board, word, start + 1, row, col - 1, visited)
-          || backtrack(board, word, start + 1, row, col + 1, visited)) {
-        return true;
-      }
-      visited[row][col] = false;
       return false;
     }
   }

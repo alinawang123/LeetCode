@@ -9,8 +9,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_102_BinaryTreeLevelOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_102_BinaryTreeLevelOrderTraversal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_124_BinaryTreeMaximumPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_124_BinaryTreeMaximumPathSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_128_LongestConsecutiveSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_128_LongestConsecutiveSequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_226_InvertBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_226_InvertBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_297_SerializeAndDeserializeBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_297_SerializeAndDeserializeBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_79_WordSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_79_WordSearch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +76,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application._13_RomanToInteger">
+  <component name="RunManager">
     <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BubbleSort" />
       <module name="LeetCode" />
@@ -114,9 +114,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._13_RomanToInteger" />
         <item itemvalue="Application._141_LinkedListCycle" />
         <item itemvalue="Application._20_ValidParentheses" />
-        <item itemvalue="Application._13_RomanToInteger" />
         <item itemvalue="Application.StableSelectionSort" />
         <item itemvalue="Application.BubbleSort" />
       </list>
@@ -132,7 +132,7 @@
       <updated>1619295670711</updated>
       <workItem from="1685743762610" duration="1298000" />
       <workItem from="1686071616347" duration="23765000" />
-      <workItem from="1686590131736" duration="17697000" />
+      <workItem from="1686590131736" duration="40299000" />
     </task>
     <task id="LOCAL-00001" summary="Two sum">
       <created>1619395069774</created>
@@ -222,16 +222,6 @@
           <url>file://$PROJECT_DIR$/leetcode/editor/en/_42_TrappingRainWater.java</url>
           <line>54</line>
           <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/leetcode/editor/en/_105_ConstructBinaryTreeFromPreorderAndInorderTraversal.java</url>
-          <line>91</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/leetcode/editor/en/_105_ConstructBinaryTreeFromPreorderAndInorderTraversal.java</url>
-          <line>92</line>
-          <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/leetcode/editor/en/_113_PathSumIi.java</url>

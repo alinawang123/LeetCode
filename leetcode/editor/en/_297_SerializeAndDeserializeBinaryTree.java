@@ -78,39 +78,74 @@ public class _297_SerializeAndDeserializeBinaryTree{
   }
 
 public class Codec {
-    private String split = ",";
-    private String na = "X";
-    // Encodes a tree to a single string.
-    public String serialize(TreeNode root) {
-        StringBuilder sb = new StringBuilder();// use of String builder to build string of any
-        // type of value
-        buildString(root, sb);
-        return sb.toString(); //string builder to string return the string
-    }
+        private String split = ",";
+        private String na = "X";
 
-    private void buildString(TreeNode root, StringBuilder sb) {
-        if(root==null) sb.append(na).append(split);
-        else {
-            sb.append(root.val).append(split);
-            buildString(root.left, sb);
-            buildString(root.right, sb);
+        public String serialize(TreeNode root) {
+            StringBuilder sb = new StringBuilder();
+            buildString(root, sb);
+            return sb.toString();
         }
-    }
-    // Decodes your encoded data to tree.
-    public TreeNode deserialize(String data) {
-        Queue<String> q = new LinkedList<>();
-        q.addAll(Arrays.asList(data.split(split))); //addAll needs to remember
-       return buildTree(q);
-    }
 
-    private TreeNode buildTree(Queue<String> q) {
-        String val = q.poll();
-        if(val.equals(na)) return null;
-        TreeNode root = new TreeNode(Integer.valueOf(val));
-        root.left= buildTree(q);
-        root.right = buildTree(q);
-        return root;
-    }
+        private void buildString (TreeNode root, StringBuilder sb) {
+            if(root == null) sb.append(na).append(split);
+            else {
+                sb.append(root.val).append(split);
+                buildString(root.left, sb);
+                buildString(root.right, sb);
+            }
+        }
+
+        public TreeNode deserialize (String data) {
+            Queue<String> q = new LinkedList<>();
+            q.addAll(Arrays.asList(data.split(split)));
+            return buildTree(q);
+        }
+
+        private TreeNode buildTree(Queue<String> q) {
+            String val = q.poll();
+            if(val == na) return null;
+            TreeNode root = new TreeNode(Integer.parseInt(val));
+            root.left = buildTree(q);
+            root.right = buildTree(q);
+            return root;
+        }
+
+
+
+//    private String split = ",";
+//    private String na = "X";
+//    // Encodes a tree to a single string.
+//    public String serialize(TreeNode root) {
+//        StringBuilder sb = new StringBuilder();// use of String builder to build string of any
+//        // type of value
+//        buildString(root, sb);
+//        return sb.toString(); //string builder to string return the string
+//    }
+//
+//    private void buildString(TreeNode root, StringBuilder sb) {
+//        if(root==null) sb.append(na).append(split);
+//        else {
+//            sb.append(root.val).append(split);
+//            buildString(root.left, sb);
+//            buildString(root.right, sb);
+//        }
+//    }
+//    // Decodes your encoded data to tree.
+//    public TreeNode deserialize(String data) {
+//        Queue<String> q = new LinkedList<>();
+//        q.addAll(Arrays.asList(data.split(split))); //addAll needs to remember
+//       return buildTree(q);
+//    }
+//
+//    private TreeNode buildTree(Queue<String> q) {
+//        String val = q.poll();
+//        if(val.equals(na)) return null;
+//        TreeNode root = new TreeNode(Integer.valueOf(val));
+//        root.left= buildTree(q);
+//        root.right = buildTree(q);
+//        return root;
+//    }
 
 }
 

@@ -73,23 +73,39 @@ public class _102_BinaryTreeLevelOrderTraversal {
   class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
       List<List<Integer>> res = new ArrayList<List<Integer>>();
-      Queue<TreeNode> queue =  new LinkedList();
-      queue.offer(root);
-      while(!queue.isEmpty()) {
-        List<Integer> temp = new ArrayList<>();
-        int i = 0;
-        while(i < queue.size()){
-          TreeNode node = queue.poll();
-          temp.add(node.val);
-          if(node.left != null) queue.add(node.left);
-          if(node.right != null) queue.add(node.right);
-          i++;
-        }
-        res.add(temp);
-      }
+      helper(res,root,0 );
       return res;
     }
-  }
-//leetcode submit region end(Prohibit modification and deletion)
 
+    private void helper (List<List<Integer>> res, TreeNode root, int height) {
+      if (root == null) return;
+      if(height>= res.size()) {
+        res.add(new ArrayList<>());
+      }
+      res.get(height).add(root.val);
+      helper(res, root.right, height+1);
+      helper(res, root.left, height+1);
+    }
+  }
+
+
+//leetcode submit region end(Prohibit modification and deletion)
+//public List<List<Integer>> levelOrder(TreeNode root) {
+//  List<List<Integer>> res = new ArrayList<List<Integer>>();
+//  Queue<TreeNode> queue =  new LinkedList();
+//  queue.offer(root);
+//  while(!queue.isEmpty()) {
+//    List<Integer> temp = new ArrayList<>();
+//    int i = 0;
+//    while(i < queue.size()){
+//      TreeNode node = queue.poll();
+//      temp.add(node.val);
+//      if(node.left != null) queue.add(node.left);
+//      if(node.right != null) queue.add(node.right);
+//      i++;
+//    }
+//    res.add(temp);
+//  }
+//  return res;
+//}
 }

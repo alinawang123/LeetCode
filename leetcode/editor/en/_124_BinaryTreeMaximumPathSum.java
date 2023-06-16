@@ -78,14 +78,12 @@ public class _124_BinaryTreeMaximumPathSum {
      return ans;
     }
     private int helper (TreeNode root){
-      if(root == null) return 0;
-      int leftMax= Math.max(0, helper(root.left));
+      if (root == null) return 0;
+      int leftMax = Math.max(0, helper(root.left));
       int rightMax = Math.max(0, helper(root.right));
-      ans = Math.max(ans, leftMax+rightMax+root.val);
-      return Math.max(leftMax+root.val, rightMax+root.val);
-
+      ans = Math.max(ans, leftMax+ rightMax + root.val);
+      return Math.max(leftMax+ root.val, rightMax + root.val);
     }
   }
 //leetcode submit region end(Prohibit modification and deletion)
-
 }
