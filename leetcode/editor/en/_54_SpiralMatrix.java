@@ -48,29 +48,30 @@ public class _54_SpiralMatrix {
   class Solution {
     public List<Integer> spiralOrder(int[][] matrix) {
       List<Integer> output = new LinkedList<>();
-      if (matrix == null || matrix.length < 1) return output;
-      int n = matrix.length, m = matrix[0].length;
-      int up = 0, down = n - 1;
-      int left = 0, right = m - 1;
-      while (output.size() < m * n) {
-        for (int i = left; i <= right && output.size() < m * n; i++) {
+      int m = matrix.length;
+      int n = matrix[0].length;
+      int up = 0; int down = matrix.length-1;
+      int left = 0; int right = matrix[0].length -1;
+
+      while(output.size()<m*n) {
+        for (int i = left; i <= right && output.size()<m*n ; i++) {
           output.add(matrix[up][i]);
         }
-        for (int i = up + 1; i < down && output.size() < m * n; i++) {
+        for (int i = up+1; i < down && output.size()<m*n ; i++) {
           output.add(matrix[i][right]);
         }
-        for (int i = right; i >= left && output.size() < m * n; i--) {
+        for (int i = right; i >= left  && output.size()<m*n ; i--) {
           output.add(matrix[down][i]);
         }
-        for (int i = down - 1; i > up && output.size() < m * n; i--) {
+        for (int i = down-1; i >up  && output.size()<m*n ; i--) {
           output.add(matrix[i][left]);
         }
-        up++;
-        down--;
         left++;
         right--;
+        up++;
+        down--;
       }
-      //System.out.printf(output.toString());
+
       return output;
     }
   }

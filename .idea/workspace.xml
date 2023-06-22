@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8719c4c-6879-41ae-bf3a-dbeada41b572" name="Default Changelist" comment="Easy problems">
+      <change afterPath="$PROJECT_DIR$/leetcode/sorting/InsertionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/sorting/MergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/sorting/QuickSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/sorting/sort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_102_BinaryTreeLevelOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_102_BinaryTreeLevelOrderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_124_BinaryTreeMaximumPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_124_BinaryTreeMaximumPathSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_297_SerializeAndDeserializeBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_297_SerializeAndDeserializeBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_79_WordSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_79_WordSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_49_GroupAnagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_49_GroupAnagrams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/editor/en/_54_SpiralMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/editor/en/_54_SpiralMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/_49_GroupAnagrams$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/_49_GroupAnagrams$Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/_49_GroupAnagrams.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/_49_GroupAnagrams.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/_54_SpiralMatrix$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/_54_SpiralMatrix$Solution.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,16 +81,23 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BubbleSort" />
+  <component name="RunManager" selected="Application.sort">
+    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="InsertionSort" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StableSelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StableSelectionSort" />
+    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MergeSort" />
+      <module name="LeetCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="QuickSort" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -98,15 +110,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_141_LinkedListCycle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_141_LinkedListCycle" />
-      <module name="LeetCode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_20_ValidParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_20_ValidParentheses" />
+    <configuration name="sort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sort" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.sort" />
+        <item itemvalue="Application.InsertionSort" />
+        <item itemvalue="Application.QuickSort" />
+        <item itemvalue="Application.MergeSort" />
         <item itemvalue="Application._13_RomanToInteger" />
-        <item itemvalue="Application._141_LinkedListCycle" />
-        <item itemvalue="Application._20_ValidParentheses" />
-        <item itemvalue="Application.StableSelectionSort" />
-        <item itemvalue="Application.BubbleSort" />
       </list>
     </recent_temporary>
   </component>
@@ -132,7 +137,7 @@
       <updated>1619295670711</updated>
       <workItem from="1685743762610" duration="1298000" />
       <workItem from="1686071616347" duration="23765000" />
-      <workItem from="1686590131736" duration="40299000" />
+      <workItem from="1686590131736" duration="68994000" />
     </task>
     <task id="LOCAL-00001" summary="Two sum">
       <created>1619395069774</created>
@@ -192,31 +197,6 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/leetcode/editor/en/_108_ConvertSortedArrayToBinarySearchTree.java</url>
           <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/leetcode/editor/en/_54_SpiralMatrix.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/leetcode/editor/en/_54_SpiralMatrix.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/leetcode/editor/en/_54_SpiralMatrix.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/leetcode/editor/en/_54_SpiralMatrix.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/leetcode/editor/en/_54_SpiralMatrix.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/leetcode/editor/en/_42_TrappingRainWater.java</url>

@@ -26,11 +26,7 @@
 // Related Topics Hash Table String Sorting 
 // 👍 8356 👎 288
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.logging.Logger;
 public class _49_GroupAnagrams{
     private static final Logger logger = Logger.getLogger(_49_GroupAnagrams .class.toString());
@@ -46,20 +42,17 @@ public class _49_GroupAnagrams{
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
         HashMap<String, List<String>> map = new HashMap<>();
+        int[] key = new int[26];
         for(String s: strs) {
-            int[] charactor = new int[26];
             for(char c: s.toCharArray()) {
-                charactor[c-'a']++;
+                key[c-'a'] ++;
             }
-            String caString = Arrays.toString(charactor);
+            String caString = Arrays.toString(key);
             if(!map.containsKey(caString)) {
                 map.put(caString, new ArrayList<>());
             }
-
             map.get(caString).add(s);
-
         }
-
         return new ArrayList<>(map.values());
     }
 }
